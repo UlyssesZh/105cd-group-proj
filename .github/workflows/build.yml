@@ -10,6 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
       - name: Set up Ren'Py
         uses: remarkablegames/setup-renpy@v2
         with:
