@@ -195,6 +195,10 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
+    build.classify('web', None)
+    build.classify('dist', None)
+    build.classify('web.zip', None)
+    build.classify('dist.zip', None)
 
 ## A Google Play license key is required to perform in-app purchases. It can be
 ## found in the Google Play developer console, under "Monetize" > "Monetization
