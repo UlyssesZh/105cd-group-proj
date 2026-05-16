@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ren'Py
         uses: remarkablegames/setup-renpy@v2
         with:
-          cli-version: 8.5.2 # 8.5.3 seems to be missing .sh executable
+          cli-version: 8.5.3
           web: true
 
       - name: Build web
@@ -52,6 +52,9 @@ jobs:
         with:
           name: web
           path: web
+
+      - name: Add .nojekyll
+        run: touch web/.nojekyll
 
       - name: Push
         uses: crazy-max/ghaction-github-pages@v5
@@ -90,3 +93,36 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           files: dist/*
+
+  upload-itchio:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref_type == 'tag'
+    steps:
+      - name: Set up butler
+        uses: remarkablegames/setup-butler@v3
+
+      - name: Download web artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: web
+          path: web
+
+      - name: Download distribution artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist
+
+      - name: Upload to itch.io
+        run: |
+          version="${{ github.ref_name }}"
+          version="${version#v}"
+          butler push web "$ITCHIO_PROJECT:web" --userversion "$version"
+          butler push dist/*-pc.zip "$ITCHIO_PROJECT:win-linux" --userversion "$version"
+          butler push dist/*-win.zip "$ITCHIO_PROJECT:win" --userversion "$version"
+          butler push dist/*-mac.zip "$ITCHIO_PROJECT:mac" --userversion "$version"
+          butler push dist/*-linux.tar.bz2 "$ITCHIO_PROJECT:linux" --userversion "$version"
+        env:
+          ITCHIO_PROJECT: UlyssesZhan/the-papillion-effect
+          BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}
