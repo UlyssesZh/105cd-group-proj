@@ -1,4 +1,8 @@
-# 105CD Group 5 project
+# The Papillion Effect
+
+A visual novel about magic and time travel.
+
+This is a group project for a class assignment.
 
 ## Development notes
 
