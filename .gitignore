@@ -27,3 +27,6 @@
 
 dist
 web
+
+# for Mac
+.DS_Store
