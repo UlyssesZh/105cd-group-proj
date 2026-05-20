@@ -39,56 +39,65 @@ label start:
     jump intro
 
 label intro:
+    # start scene intro #######################################################################
     scene bg stairs
-    p "AHHHHHHHHHH! (Trip on top stair falling to the ground)"
-    p "Really? In front of everyone? I'll be the laughing stock of the school! Everyone is going to laugh at me!"
-    "Everyone" "(Looking indifferent, some of them staring) ..."
-    p "Oh, I see, guess people in college really are irreverent.
+    # TODO: image of protag tripping on stairs
+    p "AHHHHHHHHHH!"
+    # TODO: image of everyone looking irreverent
+    p "Really?? In front of everyone?? I'll be the laughingstock of the school!!"
+    p "Oh, I guess people in college really are irreverent.
         It's not like my ability is invisibility or anything...
         Maybe I would almost prefer to be laughed at..."
-    p "But maybe I'd prefer that invisibility were my ability."
-    p "After all, being able to communicate with nature spirits and all that is kind of boring
-        if they can't really outshine humans in the first place..."
-    p "Yes, I'm talking to you all. (Look up generally toward spirits)"
-    # TODO: spirits image?
-    p "Although, i guess versatility is a plus, but who cares if they heal your scrape from tripping on the stairs
-        {b}if they were the ones who grew the roots that tripped you{/b}."
+    p "But maybe I'd prefer that invisibility were my ability.
+     After all, being able to communicate with nature spirits and all that is kind of
+      boring if they can't really outshine humans in the first place..."
+    # TODO: image of protag looking up at spirits
+    p "Yes, I'm talking to you all."
+    p "Although, I guess versatility is a plus, but who cares if the spirits heal your scrape from
+     tripping on the stairs {b}if they were the ones who grew the roots that tripped you{/b}..."
     show beatrice normal
     b "Um, who are you talking to?"
-    p "I have no idea what your talking about. (Walk away)"
+    # TODO: image of protag starting to walk away
+    p "I have no idea what you are talking about."
     b "Wait! Can you talk to the spirits??!! That's sooooo cool!!!"
     b "What are they like?? What do they say?!
-        I mean, we see them in drawings, but to see them in reality is so interesting! And it's really rare too!!"
-    b "Sure some people often have completely unique powers,but many of those are pretty similar to each other."
-    b "A spirit speaker only really shows up once every 100 years, and there is nothing like them!"
+        I mean, we see them in drawings, but to see them in reality is so interesting!
+         And it's really rare too!!"
+    # TODO: image of protag talking to beatrice
     $ temp = False
     menu:
         "like the spirits":
-            p "Oh, um, I can't believe you care that much about them.
-                I mean, it can definitely be useful sometimes, but I usually need to work out deals with them.
-                They are pretty kind, so they are cool to talk to."
+            p "Oh, um, I'm surprised you care that much about them. I mean, it can definitely
+             be useful sometimes, but I usually need to work out deals with them. They are
+              pretty kind. They're cool to talk to!"
         "completely avoidant":
-            p "Oh, um, I don't really like when people talk to me about them. It brings up some challenging stuff from my past."
+            p "Oh, I don't really like when people talk to me about them. It brings up some
+             challenging stuff from my past."
             $ temp = True
         "sick of their shit":
-            p "Oh, um, thanks, but they can be pretty inconvenient.
-                For example, I recently had to give them a handmade water bottle holder in exchange for them growing a plant instantly,
-                especially if there are people who can do that without having to talk to the spirits.
-                And then there's the pranks... (Sigh)"
-    p "Anyway, my name is [riley_name]. I haven't met many people at this school yet, so it's nice to meet you!"
+            p "Oh, thanks, but they can be pretty inconvenient. For example, I recently had to
+             give them a handmade water bottle holder in exchange for them growing a plant
+              instantly. There are people who can do that without having to talk to the spirits."
+            p "And then there's the pranks... ({i}sigh{/i})"
+    p "Anyway, my name is [riley_name]. I haven't met many people at this school yet, so it's
+     nice to meet you!"
     $ beatrice_name = f"{beatrice_first} {beatrice_last}"
     if temp:
         b "Oh, my apologies. No need to dig too deep into our pasts—we just met!"
     else:
         b "Wow! That's incredibly fascinating, like you have a magic system all to yourself!
-            I'm [beatrice_name], and I'm fairly new too! You're the first person I've really talked to as well!"
-    b "I guess it's only fair that I tell you about my power as well!!
-        Mine is Memory Viewing. If someone permits, I can look at any memory they have. It's just like a movie!"
-    b "It's not super helpful, but it's really cool!!"
-    b "Anyway, I've got to go to class!!! See you around, new friend!!!"
-    p "{i}Friend? Guess that works...{/i} See ya!!!"
-    p "Wait, I'm late too! Oh no! (Runs off)"
-
+         I'm [beatrice_name], and I'm fairly new too! You're the first person I've really
+          talked to..."
+    b "I guess it's only fair that I tell you about my power as well! Mine is Memory Viewing.
+     If someone permits, I can look at any memory they have. It's just like a movie!"
+    b "It's not super helpful, but it's really cool!"
+    # TODO: image of beatrice walking away
+    b "Anyway, I've got to go to class. See you around, new friend!!"
+    p "{i}Friend? Guess that works...{/i} See ya!"
+    # TODO: image of protag walking away
+    p "Wait, I'm late too! Oh no!"
+    # end scene intro #########################################################################
+    # start scene outside lecture hall ########################################################
     scene bg lecture outside
     "[riley_name] runs through campus, ignoring anyone they see on the way."
     p "Whew, made it one time. Just barely though..."
