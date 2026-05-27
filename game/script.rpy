@@ -1377,10 +1377,10 @@ label final_reset:
 label final_leave:
     p "Well, I think the correct answer is to just keep it off..."
     p "This world, is not so hopeless as to justify changing all of it."
-    p "Ok?"
-    b "Ok."
-    f "Ok."
-    m "Ok."
+    p "OK?"
+    b "OK."
+    f "OK."
+    m "OK."
     s "I see now. I thought if you made this choice, I would be sad, but I only feel relief."
 
     s "You were right... all of you, my dreams, I disregarded everyone. I loved all of it, all that I saw...
@@ -1389,13 +1389,13 @@ label final_leave:
         making their choices for them... and it almost led to everyone dying."
     s "What now, what could I do now, how can I make amends for something
         no one will ever know about... and what will life be like for all of us."
-    s "I can't imagine a future..where I can make up for any of it... I feel such guilt.... I can see now...
+    s "I can't imagine a future... where I can make up for any of it... I feel such guilt.... I can see now...
         but I can't guarantee I won't lose sight again, so, sorry you have to see this."
     s "He puts a sword into the ground, it starts draining him of energy."
-    s "This will render me permanently comatose, but ill be able to think, and perceive..."
-    s "A self imposed prison."
+    s "This will render me permanently comatose, but I'll be able to think, and perceive..."
+    s "A self-imposed prison."
     s "This is what I deserve..."
-    s "Do what you will, however you choose to further punish me, i'll deserve it."
+    s "Do what you will. However you choose to further punish me, I'll deserve it."
     p "YOU IDIOT!"
     p "You're such an... idiot..."
     p "We don't want you gone!"
@@ -1449,7 +1449,7 @@ label final_leave:
     hide mattias
     b "That leaves us then."
     p "It... sure does..."
-    b "Are you ok?"
+    b "Are you OK?"
     b "Maybe? I'll get used to it..."
     p "The question is, what now?"
     b "Let's help people."
