@@ -593,7 +593,7 @@ label millie_day:
         "Deny his authority":
             p "Um, I really would rather leave."
         "Play it cool while you try and slip out":
-            p "Hahaha I didn't know you were funny, Professor. But unfortunately, I should probably be goingggg."
+            p "Hahaha, I didn't know you were funny, Professor. But unfortunately, I should probably be goingggg."
     s "Well, you really don't get a choice. I am sorry, but I will be able to ensure you are treated well."
     p "That I'm treated well? What is going on? I have my phone, we can call someone to come get us."
     s "They simply will not be fast enough... You'll be grateful for me regardless. Besides, there won't be police anymore anyway!"
@@ -629,7 +629,7 @@ label millie_day:
     show millie normal
     m "What... just happened?"
     p "It seems the machine wasn't functioning properly, and did... this."
-    m "Oh my! look at what they've done! Is this real? Is everything just... gone?
+    m "Oh my! Look at what they've done! Is this real? Is everything just... gone?
         Those idiots, they did it to us... all with their dumb technology!
         Did either of them think to give us a choice in the matter?!"
     m "Of course not, they never do."
