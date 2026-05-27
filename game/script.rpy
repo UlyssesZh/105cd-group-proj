@@ -661,12 +661,12 @@ label beatrice_day:
     p "Beatrice, I alluded to this earlier, but I need your help with something."
     b "I see, I assume that will explain why you left them fighting..."
     b "How can I help?"
-    p "Trust me, It hurts to see them go at each other for me too,
+    p "Trust me, it hurts to see them go at each other for me too,
         but I need you to use your powers on me."
-    b "Huh? Why could you possibly... Ok, if you are so sure."
+    b "Huh? Why could you possibly... OK, if you are so sure."
     b "Do you agree to let me in?"
     p "Yes."
-    b "Ok then, lets do it."
+    b "OK then, let's do it."
 
     scene bg ruins
     scene bg outside
@@ -683,10 +683,10 @@ label beatrice_day:
 
     scene bg office
     show beatrice normal
-    b "Hmm, if I was a top secret file that will help save the world, where would I be?"
+    b "Hmm, if I were a top-secret file that would help save the world, where would I be?"
     b "It seems like there's no information anywhere!"
-    b "But that can't possibly be true right?"
-    p "Right, we are going to find this info!"
+    b "But that can't possibly be true, right?"
+    p "Right, we're going to find this info!"
     b "Right!"
     b "Hey, there seems to be a hidden department on this desk..."
     p "There is! Seems like we managed to find something!"
@@ -700,10 +700,10 @@ label beatrice_day:
         they may even accelerate the accumulation process due to their presence.\""
     b "..."
     b "Oh no."
-    p "What, what's wrong, it seems we've figured out how the machine functions."
+    p "What, what's wrong? It seems we've figured out how the machine functions."
     b "[riley_first], what if he forgot to add a limiter for the generation of true magic...
         What if the machine was activated before it was properly designed to channel the energy in a safe way..."
-    b "What if this happened when the machine had way more true magic to utilize then designed,
+    b "What if this happened when the machine had way more true magic to utilize than designed,
         or the wild true magic was able to generate more true magic while neither were controlled?"
     b "True magic would have the potential to drastically affect the world
         even without the specific directions the machine would provide."
@@ -720,8 +720,8 @@ label beatrice_day:
     p "Because they activated the unfinished machine, when I had attracted more true magic to it..."
     b "It's the only thing that makes sense."
     p "Oh I, I mean, me? All of it, because of me... (Sob)"
-    b "Hey, [riley_first], [riley_first], it's ok, you didn't know."
-    p "But-but you've seen what i have, all that was because of me."
+    b "Hey, [riley_first], [riley_first], it's OK, you didn't know."
+    p "But-but you've seen what I have, all that was because of me."
     p "How am I supposed to deal with that?"
     b "It may sound simple but you can never go back to not knowing anymore."
     b "And besides, what's most important is that you know now."
@@ -730,7 +730,7 @@ label beatrice_day:
     b "And if we can't then next time, you now know what caused it, so if you do return again,
         then you know that at the very least that you can stay away."
     b "Assuming you don't come, the machine will just be normal broken, not a bomb."
-    p "Oh, ok, I'm not sure how I feel, I probably won't be ok for a while, but you're right, we can figure this out,
+    p "Oh, OK, I'm not sure how I feel. I probably won't be OK for a while, but you're right, we can figure this out,
         we can make sure this world of ours does continue."
     b "That's the spirit! I'm so glad you won't let this eat away at you!"
     b "Now, we just have to figure out how to disable the machine,
