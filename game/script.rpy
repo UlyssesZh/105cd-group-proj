@@ -1596,9 +1596,9 @@ label final_fix:
 label end:
     l "It seems you have found a future you're satisfied with, I'm happy for you."
     menu:
-        l "But if any doubt remains, this path is not yet set in stone feel free to use my power once more, just remember to return here
-            if you decide this is the path your heart desires. However the other memories won't come with this time."
-        "Let's see what the other future look like":
+        l "But if any doubt remains, this path is not yet set in stone. Feel free to use my power once more, just remember to return here
+            if you decide this is the path your heart desires. However, the other memories won't come with this time."
+        "Let's see what the other futures look like":
             jump final_reset
         "My heart is content":
             $ renpy.run(MainMenu())
