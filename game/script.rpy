@@ -195,7 +195,7 @@ label intro:
     hide fry
     p "Aaaannndd he's gone..."
     if temp:
-        p "Well, I asked him if he was okay, so I did the best I could."
+        p "Well, I asked him if he was OK, so I did the best I could."
     else:
         p "Well, I guess that makes him happy, best of both worlds, you know,
             both being normal with friends and insufferable to people he couldn't care less about..."
@@ -207,7 +207,7 @@ label intro:
     p "Finally some food. I'm almost too exhausted to eat."
     p "I wonder where it would be good to sit?"
     show millie normal
-    p "I guess here would work! Um, excuse me, is it okay to sit here?"
+    p "I guess here would work! Um, excuse me, is it OK to sit here?"
     m "Fine. Whatever."
     p "Thanks! Hmmmm... first we have a side of potato chips, quite the ordinary ones I suppose..."
     m "Ugh, I'm gonna kill them. I swear I'm going to kill them!"
@@ -223,7 +223,7 @@ label intro:
         "Talk to the girl":
             pass
         "Keep ignoring the girl":
-            p "Oh, an oatmeal raisin cookie... spirits, you can have this one for free, okay?"
+            p "Oh, an oatmeal raisin cookie... spirits, you can have this one for free, OK?"
             m "I mean, this machine is clearly not doing anything to actually improve the situation outside!"
             m "Meaningless innovation as if the actual problems aren't interesting enough!"
             m "I've had {i}enough{/i}!!!"
@@ -234,7 +234,7 @@ label intro:
     p "I can definitely try! Beats doing nothing for the rest of my break...
         I'm [riley_name], by the way."
     $ millie_name = f"{millie_first} {millie_last}"
-    m "Oh, introductions. [millie_name]. Okay then, I'll tell you."
+    m "Oh, introductions. [millie_name]. OK then, I'll tell you."
     m "It wasn't anything special. In fact, my life was straight-up common...
         for someone whose parents never were sure of their ability to keep me fed, at least."
     m "I survived, but was always aware of the newest technology, never being able to try it."
@@ -245,7 +245,7 @@ label intro:
         or sending the force of someone's punch right back at them – that kind of thing."
     m "Apparently, that's rare and useful, so they gave me a scholarship and I ended up here."
     m "Nobody knows how hard it was for my family and me."
-    m "They just assume the world is okay because it doesn't affect them,
+    m "They just assume the world is OK because it doesn't affect them,
         while I have to hold my nose and work for them,
         in hopes of finally helping out the ones who placed their hopes in me."
     m "Do you get it now?"
@@ -371,7 +371,7 @@ label intro:
     b "Which is completely understandable, but indicates that you may not reach a middle ground very soon."
     m "Yeah, sure whatever..."
     f "Hold up, you still haven't apologized for slandering Professor [mattias_last]. This injustice must be remedied!"
-    b "Isn't it okay for people to have their opinions about other people... everyone's perspective is different, right?"
+    b "Isn't it OK for people to have their opinions about other people... everyone's perspective is different, right?"
     f "I wouldn't expect a normie to understand!"
     b "Oh, um. I've just remembered I have something to do... see you later [riley_first] and [millie_first]..."
     hide beatrice
@@ -386,10 +386,10 @@ label intro:
     m "Now, I think [fry_first] mentioned that you were approached by the annoying professor."
     m "I can show you to that lab... I think I'll be able to convince you not to even consider working with that man,
         especially once you see how it is there."
-    p "Oh, okay, so interesting. Um, [fry_first], I'll talk to you later."
+    p "Oh, OK, so interesting. Um, [fry_first], I'll talk to you later."
     f "Sounds good, I guess..."
     hide millie
-    f "{i}Probably will be okay if I follow them, right? I want to see the lab!{/i}"
+    f "{i}Probably will be OK if I follow them, right? I want to see the lab!{/i}"
 
     scene bg lab entrance
     show millie normal
@@ -438,7 +438,7 @@ label intro:
         The only reason I let Riley in was that they were recruited by the professor!"
     f "Oh, um, I didn't realize it would be a big deal. What now?"
     m "Sigh... Riley, you can leave. I'll figure something out."
-    p "Oh, okay. Bye, I guess."
+    p "Oh, OK. Bye, I guess."
 
     scene bg lab outside
     p "Sigh."
