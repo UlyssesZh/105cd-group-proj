@@ -185,8 +185,8 @@ label intro:
             $ temp = False
             p "You've got to relax a little. I know he's an important person,
                 but you're gonna run out of gas if you take everything too seriously."
-    f "Oh! Yeah, I was just thinking... he was much more than I expected, but now he seems so much more, human?"
-    f "I guess... I've always been suspicious of people who seem like that... Mortal, Fallible.
+    f "Oh! Yeah, I was just thinking... He was much more than I expected, but now he seems so much more human?"
+    f "I guess... I've always been suspicious of people who seem like that... mortal, fallible.
         He was always above such things to me, but now I'm not so sure."
     f "No, I have to believe he is the legend I hold so close to my heart!"
     f "I find myself with much to ruminate on! I will have to bid you farewell."
@@ -197,7 +197,7 @@ label intro:
     if temp:
         p "Well, I asked him if he was okay, so I did the best I could."
     else:
-        p "Well, I guess that makes him happy, best of both worlds you know,
+        p "Well, I guess that makes him happy, best of both worlds, you know,
             both being normal with friends and insufferable to people he couldn't care less about..."
     p "I think it's time for me to go get food..."
     p "Why is today like this? Nothing today has made sense."
