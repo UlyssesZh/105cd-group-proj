@@ -207,7 +207,7 @@ label intro:
     p "Finally some food. I'm almost too exhausted to eat."
     p "I wonder where it would be good to sit?"
     show millie normal
-    p "I guess here would work! Um, excuse me, is it ok to sit here?"
+    p "I guess here would work! Um, excuse me, is it okay to sit here?"
     m "Fine. Whatever."
     p "Thanks! Hmmmm... first we have a side of potato chips, quite the ordinary ones I suppose..."
     m "Ugh, I'm gonna kill them. I swear I'm going to kill them!"
@@ -223,33 +223,33 @@ label intro:
         "Talk to the girl":
             pass
         "Keep ignoring the girl":
-            p "Oh, an oatmeal raisin cookie... spirits, you can have this one for free, ok?"
+            p "Oh, an oatmeal raisin cookie... spirits, you can have this one for free, okay?"
             m "I mean, this machine is clearly not doing anything to actually improve the situation outside!"
             m "Meaningless innovation as if the actual problems aren't interesting enough!"
             m "I've had {i}enough{/i}!!!"
     p "Sigh... honestly, I was going to ignore you,
         but at this point I feel obligated to ask why you aren't leaving."
-    p "You don't sound like it is something that you are getting value out of."
+    p "You don't sound like it's something you're getting any value out of."
     m "HUH? You think you could understand!"
     p "I can definitely try! Beats doing nothing for the rest of my break...
         I'm [riley_name], by the way."
     $ millie_name = f"{millie_first} {millie_last}"
-    m "Oh, introductions, [millie_name]. Ok then, I'll tell you."
-    m "It wasn't anything special, in fact, my life was straight up common...
+    m "Oh, introductions. [millie_name]. Okay then, I'll tell you."
+    m "It wasn't anything special. In fact, my life was straight-up common...
         for someone whose parents never were sure of their ability to keep me fed, at least."
     m "I survived, but was always aware of the newest technology, never being able to try it."
     m "It makes me wonder why they had advertisements where we were at all.
         There was nobody there who could even consider buying name brands."
-    m "Anyway, I figured out I have this rare ability called \"reversal.\"  I can reverse most things."
+    m "Anyway, I figured out I have this rare ability called \"reversal.\" I can reverse most things."
     m "Like making an ice cube hot temporarily,
-        or sending the force of someone's punch right back at them—that kind of thing."
+        or sending the force of someone's punch right back at them – that kind of thing."
     m "Apparently, that's rare and useful, so they gave me a scholarship and I ended up here."
     m "Nobody knows how hard it was for my family and me."
-    m "They just assume the world is ok because it doesn't affect them,
+    m "They just assume the world is okay because it doesn't affect them,
         while I have to hold my nose and work for them,
         in hopes of finally helping out the ones who placed their hopes in me."
     m "Do you get it now?"
-    p "Honestly, I can empathize but never truly understand. I do have my own share of problems, though."
+    p "Honestly, I can empathize, but never truly understand. I do have my own share of problems, though."
     p "To make this session even, something about me is that I can talk to spirits...
         I may have had an easier childhood, but it made me a target throughout my life."
     p "You see, people started to realize what the spirits are capable of."
