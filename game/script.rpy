@@ -1158,7 +1158,7 @@ label initial_fix:
 
 label initial_ending:
     menu:
-        l "Are you truly ok with how things are now?
+        l "Are you truly OK with how things are now?
             Are you willing to brave your perilous day once more, to strive for a better ending?"
         "Yes":
             jump branch_point
@@ -1168,17 +1168,17 @@ label initial_ending:
 
 label final_reset:
     p "WHY! Why, can things never end happily...
-        I can't just accept that I need to make the sacrifice of leaving someone unhappy, just for the rest to be ok..."
+        I can't just accept that I need to make the sacrifice of leaving someone unhappy, just for the rest to be OK..."
     p "What should I do?"
     # TODO: Drawing of Riley Breaking down
     b "[riley_first]? What's wrong, what are you talking about?"
-    m "Whatever it is, if I can help, I will, you've given me hope of a friend for the first time since I can remeber..."
+    m "Whatever it is, if I can help, I will. You've given me hope of a friend for the first time since I can remember..."
     f "I finally found someone I could trust to see me beyond just my power,
-        who saw that I had value and want to be pittied... Pleaser, tell us whats wrong, I'm, sure we can help."
+        who saw that I had value and wasn't to be pitied... Please, tell us what's wrong, I'm sure we can help."
 
     scene bg butterfly
     # no character appear because they should be drawn on the background image
-    l "Don't despair, for it will be ok."
+    l "Don't despair, for it will be OK."
     l "I have finally gathered enough power, and [riley_first] has as well."
     l "Now, I can appear even to those without the sight... and help them as well."
     b "Are you... A spirit? How?"
@@ -1189,7 +1189,7 @@ label final_reset:
     l "I can remind you of the things you have lost, forgotten in the winds of the hurricane that brought [riley_first] to this point."
     l "Are you resolved to share this burden?"
     f "Anything for my valued assistant!"
-    m "If I can help, If I can make things better for them, then I want to."
+    m "If I can help, if I can make things better for them, then I want to."
     b "Of course, I would never look away when someone needs help, especially [riley_first]."
     l "It seems that you are resolved then."
     l "Furthermore, it seems some part of each of you already remember."
@@ -1206,14 +1206,14 @@ label final_reset:
     f "Ha, that's unlikely, it was very much [beatrice_first] who blew up the world, why I do not know."
     b "Wait, was it not [millie_first]?... Oh."
     b "Oh no, [riley_first]..."
-    b "You guys... Can't you see? all of our memories happened, [riley_first] went back all those times... Saw the world end all those times..."
+    b "You guys... Can't you see? All of our memories happened, [riley_first] went back all those times... Saw the world end all those times..."
     m "Now that you mention it... but I think I remember more than that too.
         I do remember a timeline where nothing got blown up, but it wasn't very happy for me either?"
     f "I do, I remember that it left me miserable..."
     b "Hmm, maybe that's how we got here. [riley_first] chose to go again, relive today even more times, but even when they saved everyone,
         they couldn't stand leaving any of us in a bad situation."
     b "They couldn't stand that anyone had to sacrifice anything."
-    b "Oh [riley_first]... It's ok, we're with you now, we can figure this out... It will be ok."
+    b "Oh [riley_first]... It's OK, we're with you now, we can figure this out... It will be OK."
     # TODO: A picture of a group hug, Riley at the center
     p "Everyone, thank you."
     p "With all of us together, maybe we have a chance."
@@ -1226,10 +1226,10 @@ label final_reset:
     m "Or the fact the machine itself is meant to turn the world into a isekai anime where he's the protagonist who becomes king?"
     p "With everything summarized like that it seems like [mattias_first] is the main source of the problems."
     p "Stopping him won't inherently fix anything, but we can certainly keep him from interfering while we figure out how to move forward."
-    p "I don't remember any of the solutions being completely  bad, especially compared to the apocalypse.
+    p "I don't remember any of the solutions being completely bad, especially compared to the apocalypse.
         They were definitely flawed, but maybe together we have a chance at finding something better?"
     m "More than a chance, we got this!"
-    f "Yea, just think, now I bet we can all agree to talk some sense into [mattias_first]!"
+    f "Yeah, just think, now I bet we can all agree to talk some sense into [mattias_first]!"
     m "Even you're against him now? What happened in those other loops?"
     f "Not important."
     m "If I remember the timing right, he should be in his office right about now, are you all ready? I know I am."
