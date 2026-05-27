@@ -1037,7 +1037,7 @@ label initial_leave:
     p "Thank you so much, this means a lot to me."
     b "I won't let you down!"
     b "Oh, and if he gets mad... send him to me, I'll take responsibility."
-    p "Ok! Good to know."
+    p "OK! Good to know."
 
     scene bg lecture outside
     show beatrice normal
@@ -1050,25 +1050,25 @@ label initial_leave:
     p "What? I understand me, but [beatrice_first] shouldn't be, I put her up to it,
         she didn't know what would happen."
     s "Life isn't fair kid, as you surely should know having ruined mine, that machine was everything..."
-    s "I can tell you were expecting to be punished, and ok with it,
+    s "I can tell you were expecting to be punished, and OK with it,
         so naturally to actually inconvenience you I have to do so to your friend as well."
     s "Maybe then you'll feel remorse. So long then, I will tell the principal myself."
     hide mattias
     p "[beatrice_first]... I don't know, I'm sorry..."
     b "It's not your fault, it's [mattias_first], what machine could possibly be worth this much anger?
         It still sucks regardless... We'll just have to figure something out then!"
-    p "You... still want to be friends with me? Even If I got you expelled..."
-    b "Yeah, of course, why wouldn't I... You had a good reason right?
+    p "You... still want to be friends with me? Even if I got you expelled..."
+    b "Yeah, of course, why wouldn't I... You had a good reason, right?
         Besides, we can definitely find something to do, with both our abilities..."
     b "We could do so much, like maybe a detective agency or something..."
     b "Although, we might not be able to do anything like healing for anything beyond simple things
         considering we're largely untrained still."
-    p "Yeah, I still wish things could be better, but they could be worse right?"
+    p "Yeah, I still wish things could be better, but they could be worse, right?"
     p "Although [mattias_first] might end up recruiting [millie_first] and [fry_first],
         making them work on whatever he comes up with next."
-    b "Honestly, I don't think [fry_first] will mind.. And [millie_first] can probably handle herself."
+    b "Honestly, I don't think [fry_first] will mind... And [millie_first] can probably handle herself."
     p "I still don't feel good about it though."
-    b "There is, not much we can do."
+    b "There is not much we can do."
     p "I guess, let's go then!"
 
     jump initial_ending
