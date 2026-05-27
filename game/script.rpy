@@ -946,7 +946,7 @@ label initial_reverse:
     p "Professor [mattias_last] had approached me earlier, and asked me to join the project.
         Could I get an opinion from you about that?"
     m "Um, sure, that would be fine! I will try to talk you out of even considering it though."
-    p "I know! But do want to discuss it in depth."
+    p "I know! But I do want to discuss it in depth."
 
     scene bg lecture outside
     show millie normal
@@ -957,12 +957,12 @@ label initial_reverse:
         but based on what I know about [mattias_first], he's not the kind to do that."
     p "It won't be intentional... Look, I can't tell you how, but I have information
         that shouldn't be possible for me to know."
-    m "That's not terrifying at all... but, I don't think you're the type to lie about that, maybe a spirit told you?"
+    m "That's not terrifying at all... but I don't think you're the type to lie about that. Maybe a spirit told you?"
     p "Oh, yeah, it actually is something like that... Good guess."
     p "Anyway, his machine is broken, and I have to do something...
         After thinking about it, I think your power is the best way to do that."
     p "We need to reverse the directive of the machine, have it do the opposite of what was intended."
-    p "But, what that will end up doing, is more or less erasing magic from the world..."
+    p "But what that will end up doing is more or less erasing magic from the world..."
     m "What, what do you mean more or less... and why would that be acceptable to anyone?"
     p "Because the alternative is the destruction of everything... It's because the machine is broken..."
     p "Maybe we could fix it, but the options to do that, or to neutralize it, have problems..."
@@ -983,7 +983,7 @@ label initial_reverse:
     scene bg lab room
     show millie normal
     p "Are you ready?"
-    m "As I'll ever be... lets condemn this world to being one of technology, where the rich undeniably rule."
+    m "As I'll ever be... let's condemn this world to being one of technology, where the rich undeniably rule."
     p "To save it from a fate where no one can live."
     m "Yes, of course."
     # TODO: Machine activate, and makes the visual and sound effects, but there is another new sound effect as well, to indicate reversal
