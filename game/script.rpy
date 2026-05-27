@@ -1123,7 +1123,7 @@ label initial_fix:
     f "I see... I think mine is different too."
     f "I keep on looking at different things in this forest, and knowledge about how they can be used
         and combined with each is just flowing into my brain, like what used to happen with technology..."
-    f "Am I an alchemist now? I guess that's not bad... not a cool as technology was though."
+    f "Am I an alchemist now? I guess that's not bad... not as cool as technology was, though."
     f "And I'm guessing that magic will become fundamentally more important, now that everything seems to approach true magic."
     f "There might even be monsters... dragons even."
     f "That's kind of terrifying..."
@@ -1138,8 +1138,8 @@ label initial_fix:
         I know this must come as a shock, but I do have my reasons!"
     s "Challenge me if you can! Ha, as if you could!!!"
     p "So, [millie_first]'s definitely gonna do a revolution, right?"
-    f "Honestly I didn't talk to her much, but probably, I've seen her glares at the professor."
-    p "We'll guess we should find her, and [beatrice_first] too if we can...
+    f "Honestly, I didn't talk to her much, but probably. I've seen her glares at the professor."
+    p "Well, I guess we should find her, and [beatrice_first] too if we can...
         I wonder if we'll be able to survive in this world."
     f "Hopefully we can, although, I think next time we find rest, I'll need some time, you can go ahead."
     p "Are you kidding, I'm not going to get eaten by a dragon alone! I'm sure things aren't too mixed up from before,
@@ -1148,7 +1148,7 @@ label initial_fix:
         trying to kill him. We have to find them, we have to be able to work with somebody, but you're important too..."
     p "You'll have all the time you need to process, hopefully they'll be in the same place we end up anyway..."
     f "Thanks, though, it might be a while before I can truly accept that we'll never build a computer again."
-    p "In this reality, we don't know if we'll be able to survive even, or if there other will.
+    p "In this reality, we don't know if we'll be able to survive, or if the others will either.
         And assuming that, we might not meet up... but I don't want to give up hope."
     p "Even if it's hard sometimes, this is still hope here, and that's better than the alternative of everything being destroyed."
     p "{i}Things could be worse, I think I need to hold onto that, because our situation right now is very, unfortunate.{/i}"
