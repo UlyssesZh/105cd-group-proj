@@ -149,23 +149,23 @@ label intro:
     s "We have taken the principles of science, particularly those related to electricity,
         and have applied them to all manner of abilities."
     s "By doing this, we found our baseline magical energy unit called Frederick Particles,
-        named after the man who discovered them—my father! (Pause)"
-    s "Anyway, these particles—and the energy they are a part of—are what is often referred to as \"magic,\"
-        although these have less of a relation to \"true magic\" than you would think."
+        named after the man who discovered them – my father! (Pause)"
+    s "Anyway, these particles – and the energy they are a part of – are what is often referred to as \"magic,\"
+        although they have less of a relation to \"true magic\" than you would think."
     s "Despite what intuition may imply, these particles are completely understandable through science.
         Very few abilities come close to resembling true magic. Relatively few are even able to interact with true magic at all,
         and they certainly can't attain the scale and impossibility of true magic."
     s "If you're lucky enough to generate positively charged mana particles, then your ability impacts the world."
     s "The reverse, negative particles are also useful, but all modern methods of conversion and technological interaction
         are currently known to utilize the positive particles, and their manifestations and creations in the physical world."
-    s "However, abilities fueled with negative powers are more conceptual, their capabilities do approach true magic,
+    s "However, abilities fueled with negative powers are more conceptual. Their capabilities do approach true magic,
         but they are still fundamentally rooted in science,
         and cannot affect the physical world beyond affecting the concepts of the physical world."
     p "By drawing and manipulating both of these particles,
-        we can achieve feats of such magnitude that it puts all currently known abilities to shame."
+        we can achieve feats of such magnitude that they put all currently known abilities to shame."
     p "Considering our gathering and storage methods, we can accomplish great things,
         closer than ever to recreating the miracles of spirits."
-    p "And If one were to manipulate all types of these particles, have them work together,
+    p "And if one were to manipulate all types of these particles, have them work together,
         and then utilize them, they may even be able to produce and control true magic, the power of spirits."
     p "They will have the power to change the world entirely, to create miracles on a whim."
     s "Anyway, this is an introductory course, so don't worry about that yet! For now, we will return to the basics.
