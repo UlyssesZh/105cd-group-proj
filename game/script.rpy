@@ -100,7 +100,7 @@ label intro:
     # start scene outside lecture hall ########################################################
     scene bg lecture outside
     "[riley_name] runs through campus, ignoring anyone they see on the way."
-    p "Whew, made it one time. Just barely though..."
+    p "Whew, made it on time. Just barely though..."
     p "Huh? Why is everyone still outside? Shouldn't everyone be inside already? Are we all late?!"
     show fry normal
     f "Well, well, well... I can see from your face that you seem confused.
@@ -109,9 +109,9 @@ label intro:
     f "You see, I am [fry_name], and I am taking every class I can with this professor, [mattias_name]."
     f "He's a visionary! The only person at this school who's even a little famous.
         His class just ended, and people are slowly leaving the lecture hall."
-    f "It's only natural that they linger—they all want to speak with him!
+    f "It's only natural that they linger – they all want to speak with him!
         In fact, I would be there too, if I hadn't talked to him much in the past."
-    p "Oh, um, hello? I'm [riley_name]."
+    p "Oh, um, hello. I'm [riley_name]."
     menu:
         "TODO: option 1":
             p "I'm glad I met someone who seems like they know what they're doing!
@@ -119,7 +119,7 @@ label intro:
                 but it's required for my major in healing, so it would be great if you could help me!"
             f "Sure! I guess I can do that, as long as you actively try as well."
         "TODO: option 2":
-            p "I was honestly expecting you to keep talking like you are a mad scientist...
+            p "I was honestly expecting you to keep talking like you were a mad scientist...
                 Anyway, I'm glad someone is talking to me."
             f "(Slightly embarrassed) Oh, that, um, I put that on to deter anyone who might be hostile to my interests.
                 You see, my power is relatively lame... I can sense what's wrong with technology when it's broken."
