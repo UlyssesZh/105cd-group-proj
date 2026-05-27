@@ -1078,7 +1078,7 @@ label initial_fix:
     p "Anyway, I actually had a question about today's homework,
         and [fry_first] had agreed to help me earlier, so I guess I'll have to say goodbye.
         [beatrice_first], [millie_first], see you later!"
-    m "Ok, see ya!"
+    m "OK, see ya!"
     b "Have a good rest of your day!"
 
     scene bg lecture outside
@@ -1102,12 +1102,12 @@ label initial_fix:
 
     scene bg lab room
     show fry normal
-    f "Ok, I think the machine is fixed now."
+    f "OK, I think the machine is fixed now."
     p "Oh, is it?"
     p "I guess it must be about time to activate it then."
     f "Yeah, I guess it is..."
-    p "See you on the other side I guess."
-    f "Ok, I've also confirmed that it's true that [mattias_first] is not who I thought...
+    p "See you on the other side, I guess."
+    f "OK, I've also confirmed that it's true that [mattias_first] is not who I thought...
         As soon as we've settled down after the machine does whatever it does,
         I'll definitely need some time to think and accept that... but now it's time to activate this machine."
     p "Let's go!"
