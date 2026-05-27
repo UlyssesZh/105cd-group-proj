@@ -397,7 +397,7 @@ label intro:
     p "Wow, this is like a sci-fi movie!"
     m "Ha, more like a supervillain's lab. Come here, I'll show you to the main event."
     m "Oh, but before that, I do want to clarify...
-        Whilst I don't really like them, the rest of the staff haven't really done anything wrong."
+        While I don't really like them, the rest of the staff haven't really done anything wrong."
     m "It's just the white-coated narcissist."
     menu:
         "TODO option 1":
