@@ -456,7 +456,7 @@ label intro:
     b "I'm glad you were there. Sometimes people need a guiding light to get them out of their anger."
     p "I didn't feel like I really did much, but thanks for those nice words regardless.
         I do need to head home, so I'll see you soon!"
-    b "Sounds good, I'm still heading this way, talk to you later!"
+    b "Sounds good. I'm still heading this way. Talk to you later!"
 
     scene bg stairs
     p "Almost out, I hope I can keep getting closer with everyone tomorrow. It seems like I'm on my way to a college friend group."
