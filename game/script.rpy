@@ -1323,7 +1323,7 @@ label final_reset:
     b "This isn't an easy choice, but we'll make it together, and if we somehow snuff out the light by accident, then we can persist,
         and make sure there's at least a little left... a little that may reignite the light once again... that's what we can do together."
     b "As long as you haven't given yourself completely to serving only death, oppression and destruction,
-        there is always hope you can change, and provide hope, care,  and goodness to the world again."
+        there is always hope that you can change, provide hope, care, and goodness to the world again."
     f "I'll join too, I haven't seen what you have, but I can see the world, how broken it is."
     f "People make such assumptions about others, based on what you can do, what abilities you have,
         what choices you make, and the values you hold."
@@ -1331,7 +1331,7 @@ label final_reset:
         for what? To feel right, to feel superior."
     f "I see people being so mean to each other, and I need to do something, fix something, even if it isn't them right away."
     f "Ultimately, the only thing we can be sure to fix is our connections with those around us,
-        there might not even be a cure all for humanity, but we can certainly do something."
+        there might not even be a cure-all for humanity, but we can certainly do something."
     f "Fix our own mistakes, no matter how terrible it is to face them, fix our ways of thinking, so we may understand those around us...
         but we can only do so much, maybe we can fix ourselves, maybe we can fix our bonds, but we can't fix others."
     f "We shouldn't want to fix others... Whenever we try, we always end up hurting them...
@@ -1360,11 +1360,11 @@ label final_reset:
     p "Together we'll have a head start in figuring out how to manage that coexistence with the mundane world,
         and [fry_first] can be our link to technology."
     p "And then finally we could leave the machine be, embrace this world we already have, without its flaws,
-        we can each make our way in our current world, and me and Beatrice won't be expelled this time."
+        we can each make our way in our current world, and [beatrice_first] and I won't be expelled this time."
     p "Did I miss anything?"
     b "Nope, all of those sounds fine to me, and we can figure out what goes on from there... I think I will be making the same choice as you,
         but if I think of anything last minute, I'm not so nice that I'll let you make an objectively wrong choice!"
-    m "Pretty much same for me."
+    m "Pretty much the same for me."
     f "Me as well."
     menu:
         "Keep the machine off":
