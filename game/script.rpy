@@ -493,14 +493,14 @@ label branch_point:
 
     $ route_count = int(chosen_beatrice) + int(chosen_millie) + int(chosen_fry)
     if route_count == 0:
-        p "Huh? Why am I here again? The world is... still ok!"
+        p "Huh? Why am I here again? The world is... still OK!"
         p "If I'm here, maybe I can actually prevent it from happening."
-        p "But I don't think I have much time, I've got to hurry, maybe that machine caused this to happen?"
+        p "But I don't think I have much time. I've got to hurry. Maybe that machine caused this to happen?"
     else:
-        p "Ok, I'm back."
+        p "OK, I'm back."
     if route_count == 1:
         p "Was it really [last_triggerer]? Was it them the first time too?
-            Anyway, regardless I think I can do something to prevent the destruction,
+            Anyway, regardless, I think I can do something to prevent the destruction,
             but maybe I should get more info first."
     elif route_count == 2:
         p "It was [last_triggerer] this time?"
@@ -517,7 +517,7 @@ label branch_point:
     p "Oh, right, um, everyone, this is [fry_first]."
     f "Try not to antagonize them, these are good people."
     f "Oh... Is that so? Guess I can tone it down then..."
-    m "I recognize you, you're that guy who's been following [mattias_first] around like a shadow right?"
+    m "I recognize you. You're that guy who's been following [mattias_first] around like a shadow, right?"
     m "I can't understand what you can see in the guy."
     p "Haha! A difference in opinion, surely there's no need to fight over this!"
     if route_count > 0:
@@ -532,7 +532,7 @@ label branch_point:
                 jump initial_fix
             "Actually, there is more I want to investigate first":
                 pass
-    p "Actually, I'm quite interested in this lab, actually, there's a cool machine in there right?"
+    p "Actually, I'm quite interested in this lab. There's a cool machine in there, right?"
     m "Yeah, I guess so, if you could call anything that man contributes \"cool\"..."
     p "I wonder, I think I might try and take a look..."
     p "He mentioned me helping him, and I'd prefer to go look around before I make any decision."
