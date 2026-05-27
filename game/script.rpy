@@ -421,24 +421,24 @@ label intro:
     p "His power? Now that I think about it, I don't know what it is..."
     m "Believe it or not, it's swords. He can literally create magic swords."
     p "Wow, that is fascinating. So presumably, his swords have practical use outside of warfare..."
-    m "I know right? A surprising amount of the machine is made using the swords as parts."
+    m "I know, right? A surprising amount of the machine is made using the swords as parts."
     m "Which meanssss that currently no scientist knows what science is happening, if it's science at all.
         So I guess [fry_first] was right about one thing..."
     m "He does seem to be a visionary, even if those visions seem more like a manifestation of whatever anime he's watched
         rather than a bright future."
     show fry normal at right
-    f "OH WOW WOW WOW, this place is so Cool!"
+    f "OH WOW WOW WOW, this place is so cool!"
     m "Oh no."
     f "I'm sorry I can't help myself... Is that what he's been working on?
         That's so cool, maybe it's a revolutionary form of computer that will advance us 50 years!"
     m "Why. Are. You. Here?"
-    f "I just had to see!  Is that a problem?"
+    f "I just had to see! Is that a problem?"
     m "..."
     m "YES [fry_first], of course it's a major problem.
         The only reason I let Riley in was that they were recruited by the professor!"
     f "Oh, um, I didn't realize it would be a big deal. What now?"
     m "Sigh... Riley, you can leave. I'll figure something out."
-    p "Oh, ok. Bye I guess."
+    p "Oh, okay. Bye, I guess."
 
     scene bg lab outside
     p "Sigh."
