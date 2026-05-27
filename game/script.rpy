@@ -269,13 +269,13 @@ label intro:
     p "{i}Oh? Is that Professor [mattias_last]? Maybe I should ask?{/i}"
     s "Sigh... are you going to keep staring or what?"
     p "Oh, um, sorry. I was just remembering your lecture,
-        how there are positive and negative Frederick particles, I wanted to double check my understanding."
+        about how there are positive and negative Frederick particles, and I wanted to double-check my understanding."
     p "Specifically, I was wondering which category a spirit speaker would fall into?"
     s "Oh? Spirits, huh... interesting."
     s "Well, usually it's pretty easy to categorize abilities
         since the positive particles only really manifest when one is directly creating something with those particles."
-    s "Anything that involves things like manipulating things that already exist, concepts, or mystical constructs
-        tend to be the negative particle..."
+    s "Anything that involves manipulating things that already exist, concepts, or mystical constructs
+        tends to be negative-particle based..."
     s "Spirits may be the exception to that... To our knowledge, they don't actually use the particles.
         It's thought that whatever they use is similar, the same fundamental force per se,
         but theirs is a more inexplicable, primal form."
