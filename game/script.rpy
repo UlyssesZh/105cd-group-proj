@@ -1538,17 +1538,17 @@ label final_fix:
         but to protect those who don't have abilities at all."
     m "Yeah, just because you have powers, doesn't mean we have to choose to use them to exploit...
         we can work together to ensure that those who would be vulnerable are safe, and don't get eaten by dragons."
-    b "As I said, I think that as long as we're together, we'll be ok, so we can work together!
+    b "As I said, I think that as long as we're together, we'll be OK, so we can work together!
         Together, we can probably fight anything that would either oppress or eat those who want to live peaceful lives."
     f "I will miss technology, but that doesn't mean life will be bad... just different...
-        and i can become super good with alchemy, and then teach those skills to others."
+        and I can become super good with alchemy, and then teach those skills to others."
     f "Maybe eventually, though it may take awhile, I will be able to make alchemy the new equalizer in that world,
         or at least make it so the people who defend are able to have people working behind them to help in their own way."
     f "We can still ensure the safety of those who prefer a different way of life."
     p "Let's do it then, [fry_first], you know how to fix the machine right?"
     p "Could you also remove [mattias_first] king announcement while you're at it?"
     f "If I conceptualize fixing as including that, probably."
-    p "Ok, let's go then! To adventure!"
+    p "OK, let's go then! To adventure!"
     m "Sounds fun!"
     b "Let's protect people!"
     f "Let's get this started then."
