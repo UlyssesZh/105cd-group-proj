@@ -787,10 +787,10 @@ label beatrice_day:
     b "No, [riley_first], it's not your fault, you didn't do anything but exist,
         and you deserve to exist, [riley_first]..."
     b "If anyone, it was [millie_first]'s fault, for being too rash at hitting that darn button."
-    p "No, she had her reasons... And she didn't know, I did. Besides, [millie_first] is good, I can tell,
+    p "No, she had her reasons... And she didn't know; I did. Besides, [millie_first] is good, I can tell,
         besides, she would have been right if I wasn't there!"
     b "No, no matter what, what [millie_first] did was selfish,
-        an easy fix to the unknown she was facing... we would have been more than willing to help right!"
+        an easy fix to the unknown she was facing... we would have been more than willing to help, right!"
     b "She's the one who made the choice to ignore us,
         to fall into the darkness she was facing to avoid having to rely on us for help."
     p "But, she's good, she didn't mean to—"
@@ -802,7 +802,7 @@ label beatrice_day:
         I try to help people, to be the light that shines in the dark..."
     b "I think you're the same, you were so excited to help at that hospital,
         you didn't consider using the loop for your own gain, you just wanted to save everyone."
-    b "Though  humanity isn't good, some humans are... They matter, and maybe one day I'll be able to include myself with them."
+    b "Though humanity isn't good, some humans are... They matter, and maybe one day I'll be able to include myself with them."
     b "I've been inside people's heads, [riley_first], and the amount of darkness I can sense is immense..."
     b "Even those with good intentions, like [millie_first], can become blind to the fact they have become darkness as well."
     b "But you weren't like that, it's why I wanted to help you so much.
@@ -812,7 +812,7 @@ label beatrice_day:
     b "I know you can solve it, solve how to make things better, and seize a brighter future."
     b "For no matter what, no matter what guilt you feel now,
         you are one of the people that make it worth it to look upon this planet that's as dark as the night sky."
-    p "Beatrice I—"
+    p "Beatrice, I—"
     b "It seems it's time to go, I hope I do get reset as well."
     b "Who knows, maybe that spirit butterfly of yours will figure out a way to restore our memories eventually,
         assuming I do get to come with, at least."
