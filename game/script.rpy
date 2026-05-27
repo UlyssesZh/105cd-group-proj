@@ -898,7 +898,7 @@ label fry_day:
     show fry normal
     p "I see, it happened again."
     f "..."
-    p "[fry_first], are you ok, I hope [beatrice_first] got out ok..."
+    p "[fry_first], are you OK? I hope [beatrice_first] got out OK..."
     f "Yeah, I am, I can barely process what is going on right now."
     f "First of all, the machine shouldn't have done this, it just should have malfunctioned and broken..."
     f "Second, I heard some things from the other lab workers... that kind of rattled me..."
@@ -922,7 +922,7 @@ label fry_day:
     f "I've been guilty of this too."
     f "My power is to know how to fix what's broken... but it only works on machines... It didn't help when I looked all around,
         and saw everything that was broken, but it wasn't technology, I couldn't understand it..."
-    f "If I could have chosen, If I could choose the objective of the machine, I would have chosen to create the miracle of understanding,
+    f "If I could have chosen, if I could choose the objective of the machine, I would have chosen to create the miracle of understanding,
         of people seeing each other as themselves, and understanding their problems.
         I feel like I'm so close to understanding it, how to fix the broken parts of humanity,
         the parts of us that make everyone worse, that break more and more souls,
@@ -933,7 +933,7 @@ label fry_day:
         figured out how to fix these ways of thinking we seem to be so stuck at."
     p "I understand [fry_first]..."
     # TODO: drawn scene Butterfly appears again, Riley looks at it, Fry looks down.
-    p "I see, so I'll be able to try again, maybe with fry's help, I could figure something else out."
+    p "I see, so I'll be able to try again. Maybe with [fry_first]'s help, I could figure something else out."
     # TODO: Butterfly effect sounds/images
 
     jump branch_point
