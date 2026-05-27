@@ -1253,22 +1253,22 @@ label final_reset:
     m "No one wants to worship your sorry ass, I'm sorry."
     m "If you were king, I would start a revolution myself!"
     p "I knew it! Right [fry_name]?"
-    f "Oh yeah in a fantasy world, yep, you read her super well!"
+    f "Oh yeah, in a fantasy world, yep. You read her super well!"
     m "Whatever! The point is that we know way more than you at this point, you old man!"
     s "Who ever said I was old? And I don't understand a word you're saying."
-    b "I'm sorry professor, but I do very much dislike you! You didn't even think that inviting [riley_first] would negatively impact the machine!
+    b "I'm sorry, professor, but I do very much dislike you! You didn't even think that inviting [riley_first] would negatively impact the machine!
         It caused the world to blow up! Multiple times!"
     b "You're lucky [riley_first]'s powers were able to make use of that and for their mutually beneficial relationship with a time butterfly-thing.
-        Sorry Lycaenidae I don't know what you are, and frankly I am not sure that you know either..."
+        Sorry, Lycaenidae, I don't know what you are, and frankly, I am not sure you know either..."
     b "The point is, you've lost your vote to determine what happens to the world!"
     s "Time butterfly? Destroy the world? Multiple times? What the heck does any of this mean..."
     b "Sigh, it's probably easier to show you... Allow my memories into you, it will be a lot quicker."
-    s "Oh you can do that! That's interesting, yeah, maybe I can use that! I already have an idea on how we can utilize it!"
+    s "Oh, you can do that! That's interesting, yeah, maybe I can use that! I already have an idea on how we can utilize it!"
     m "He really can't help himself, can he?"
     b "All right! Here you go!"
     s "I can see now! I can see now? I EXPELLED you? Well, I can sort of understand that,
         even if it makes sense why you took your actions as well."
-    s "Oh, It seems I may be a bit silly, in reflection."
+    s "Oh, it seems I may be a bit silly, in reflection."
     s "It sounded so good in my head, maybe I hyperfocused a bit too—"
     s "No! Now that we have this info, I can make a new plan! Utilize more true magic with [riley_first] help!
         I have to fix everything, make a world that actually makes sense to me!"
@@ -1284,7 +1284,7 @@ label final_reset:
     m "I mostly agree, even if I like magic, it's not like a magic world is all good either, I like being able to watch silly TV shows...
         those make me happy, even if I dislike the institutions that technology can make."
     m "In addition, people can find ways to live in an unequal world if they have to, and who's to say we can't start a revolution
-        in a technological world as well, even if it's a different kind, one of words Moreno than violence."
+        in a technological world as well, even if it's a different kind, one of words more so than violence."
     b "I don't think the shape of the world matters as much as the people in it,
         choosing to help each other, to counteract those who go astray..."
     b "I think it's best if we focus on the fact that no matter what humanity will be the same.
@@ -1305,13 +1305,13 @@ label final_reset:
     p "Every decision leads to more decisions, new outcomes, new things to miss, to need, to want.
         We all have our own idea on what will solve everything, and we walk forward so we may eventually reach it...
         but you did. Would you be happy, I don't think so, you've dreamed so much that it's sure to be utterly disappointing."
-    p "I dont know what's next, I dont know whats right, maybe nothing is, but I can make a choice, and that choice will do something,
+    p "I don't know what's next, I don't know what's right, maybe nothing is, but I can make a choice, and that choice will do something,
         it may hurt some, kill some, save some, help some...
-        but it wont change the fact that ill be responsible no matter what, because that is my burden to bear..."
+        but it won't change the fact that I'll be responsible no matter what, because that is my burden to bear..."
     b "Wait, you don't seriously think that, do you, it's mine too, I've seen what you have, and I agree."
     b "We have such beautiful dreams, but beauty is in the eye of the beholder. We think that we know what's right,
         and then dream a reality where that is true."
-    b "But we deceive ourselves, thinking that it benefits everyone, not just us. that our dreams should be everyone's.
+    b "But we deceive ourselves in thinking that it benifits everyone and not just us. That our dreams should be everyone's.
         That our understanding should be universal."
     b "But forcing your ideas, even if you think it's for the best, just stifles each other's dreams...
         we have to find a balance, a way to make everyone happy, but no one content...
