@@ -549,16 +549,16 @@ label millie_day:
     $ last_chosen = millie_first
     $ chosen_millie = True
     # TODO: black screen with \"INTENT\" Written in white appears
-    p "[millie_first], you would be able to take me right?"
+    p "[millie_first], you'd be able to take me, right?"
     m "I could take you... but I would caution you about doing anything related to that man."
-    p "No, I think I need to do this. I Need to get all the info I can right?"
+    p "No, I think I need to do this. I need to get all the info I can, right?"
     p "[fry_first] and [beatrice_first], I'm sorry, but [millie_first] and I have got to go!"
     f "Oh, um, see ya later... Where?"
     p "The lab! Right [millie_first]?"
     m "Don't see why you're in such a rush! Surely it's not that urgent?"
     p "It {i}is{/i}! I need to figure it out, find out why,
         [mattias_first] must be hiding something about that machine!"
-    m "Oh, ok... if you're looking for dirt, maybe we can look in his office, the professor, I mean."
+    m "Oh, OK... if you're looking for dirt, maybe we can look in his office - the professor's, I mean."
     p "That sounds like a great place to start!"
 
     scene bg office
@@ -566,7 +566,7 @@ label millie_day:
     m "So, what exactly are we looking for?"
     p "Anything, something that indicates why this machine actually exists..."
     m "Oh, well, none of us have any idea... I'm not sure information like that will be just laying around in his office."
-    m "But, I am interested, and it may make all the stress he puts me through worth it."
+    m "But I am interested, and it may make all the stress he puts me through worth it."
     p "Yeah, if it's something worthwhile, I might be tempted to work here as well,
         assuming that professor isn't too weird to me."
     m "You know, this place isn't nearly as bad with someone here for moral support.
@@ -577,7 +577,7 @@ label millie_day:
         Having him as an ally would probably make it better for both of us."
     m "That's very kind of you. I guess we'll see how things go. It sounds crazy,
         but maybe if we hold you joining over his head, he will listen to reason and actually work with us some more."
-    p "Haha now we're talking! It would be nice to have some experience..."
+    p "Haha, now we're talking! It would be nice to have some experience..."
     m "Well, that's more or less the lab. I am looking forward to seeing that man's face when
         I make his new resource contingent on being nice to me, the problem child!"
     p "Yeah, it seems like that would be cathartic for you! Do you want to talk about the specific work you do?
