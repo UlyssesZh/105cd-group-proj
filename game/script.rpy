@@ -764,19 +764,19 @@ label beatrice_day:
     m "He refused to write me a recommendation. I already asked, and he said NO!"
     m "He said that he's \"Too Busy.\" As if he's doing ANYTHING.
         Without his recommendation I have very little chance of finding something on time."
-    b "[millie_first], It's ok! We'll figure something out, right [riley_first]?"
+    b "[millie_first], it's OK! We'll figure something out, right [riley_first]?"
     p "Yes, of course we can!"
     m "No... I know what I need to do. If I make myself a part of this lab inextricably,
         if I had something to show for all those hours I put in, then they'll have to acknowledge me."
     m "Even the unfinished machine should still do something if we activate it,
         and I'll be recorded as the one who did it!"
-    b "No! You don't understand, We'll figure something out,
-        we promise, but you can't activate that machine!"
+    b "No! You don't understand, we'll figure something out. We promise.
+        But you can't activate that machine!"
     # TODO: Sound/light effect to indicate it's been turned on
     "[millie_first] turns on the machine."
     $ last_triggerer = millie_first
-    b "Oh no! I was too late, [riley_first] let's go."
-    p "Oh. Ok then... Why is this happening?"
+    b "Oh no! I was too late. [riley_first], let's go."
+    p "Oh. OK then... Why is this happening?"
     b "You can overthink later, for now we've got to get out of here!"
 
     scene bg ruins
