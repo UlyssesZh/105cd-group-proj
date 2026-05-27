@@ -66,15 +66,15 @@ label intro:
     # TODO: image of protag talking to beatrice
     $ temp = False
     menu:
-        "like the spirits":
+        "Open up about the spirits":
             p "Oh, um, I'm surprised you care that much about them. I mean, it can definitely
              be useful sometimes, but I usually need to work out deals with them. They're
               pretty kind, and they're cool to talk to!"
-        "completely avoidant":
+        "Avoid the topic":
             p "Oh, I don't really like when people talk to me about them. It brings up some
              challenging stuff from my past."
             $ temp = True
-        "sick of their shit":
+        "Complain about the spirits":
             p "Oh, thanks, but they can be pretty inconvenient. For example, I recently had to
              give them a handmade water bottle holder in exchange for them growing a plant
               instantly. Some people can do that without having to talk to the spirits."
@@ -113,27 +113,30 @@ label intro:
         In fact, I would be there too, if I hadn't talked to him much in the past."
     p "Oh, um, hello. I'm [riley_name]."
     menu:
-        "TODO: option 1":
+        "Ask for help with class":
             p "I'm glad I met someone who seems like they know what they're doing!
                 The science of magic has always been so confusing to me,
                 but it's required for my major in healing, so it would be great if you could help me!"
             f "Sure! I guess I can do that, as long as you actively try as well."
-        "TODO: option 2":
+        "Tease his whole vibe":
             p "I was honestly expecting you to keep talking like you were a mad scientist...
                 Anyway, I'm glad someone is talking to me."
-            f "(Slightly embarrassed) Oh, that, um, I put that on to deter anyone who might be hostile to my interests.
+            f "Oh, that, um, I put that on to deter anyone who might be hostile to my interests.
                 You see, my power is relatively lame... I can sense what's wrong with technology when it's broken."
     f "Part of the reason why I like Professor [mattias_last] so much is that, similar to me,
         his power doesn't have much use. Nobody even knows what it is!
-        But he doesn't let that slow him down, and now he's known for being a genius! He inspires me a lot."
+        But he doesn't let that slow him down, and now he's known for being a genius! He really inspires me."
     p "Oh wow, that {i}is{/i} inspiring! I honestly expected this class to be boring, like high school... but now I'm excited!!!"
     f "I'm glad! Professor [mattias_last] is splendid. Let us enter now, my friend,
-        and see if we can glean a fragment of his boundless wisdom! (Runs into lecture hall)"
-    p "My name is Riley, by the way... (Hurriedly follows [fry_first] into lecture hall)"
+        and see if we can glean a fragment of his boundless wisdom!"
+    "[fry_first] rushes into the lecture hall."
+    p "{i}He really doesn't slow down, does he?{/i}"
+    "[riley_name] hurries after him."
 
     scene bg lecture
     show fry normal at left
-    p "(Finally catches up with [fry_first]) What the heck... It won't be the end of the world if you're late, you know..."
+    "[riley_name] finally catches up with [fry_first]."
+    p "What the heck... It won't be the end of the world if you're late, you know..."
     f "Nonsense, my friend! I had to get good seats!"
     hide fry
     show mattias normal
@@ -149,7 +152,8 @@ label intro:
     s "We have taken the principles of science, particularly those related to electricity,
         and have applied them to all manner of abilities."
     s "By doing this, we found our baseline magical energy unit called Frederick Particles,
-        named after the man who discovered them – my father! (Pause)"
+        named after the man who discovered them – my father!"
+    "He pauses for effect."
     s "Anyway, these particles – and the energy they are a part of – are what is often referred to as \"magic,\"
         although they have less of a relation to \"true magic\" than you would think."
     s "Despite what intuition may imply, these particles are completely understandable through science.
@@ -178,10 +182,10 @@ label intro:
     p "Wow, my brain hurts..."
     f "..."
     menu:
-        "TODO: option 1":
+        "Check on him":
             $ temp = True
             p "You ok?"
-        "TODO: option 2":
+        "Tell him to relax":
             $ temp = False
             p "You've got to relax a little. I know he's an important person,
                 but you're gonna run out of gas if you take everything too seriously."
@@ -191,14 +195,15 @@ label intro:
     f "No, I have to believe he is the legend I hold so close to my heart!"
     f "I find myself with much to ruminate on! I will have to bid you farewell."
     f "But know this, next time you see me, I will be unrecognizable, changed, enlightened further from my studies!"
-    f "I pray you'll be able to recognize someone who considers you a friend! (Run away)"
+    f "I pray you'll be able to recognize someone who considers you a friend!"
+    "[fry_first] runs away."
     hide fry
     p "Aaaannndd he's gone..."
     if temp:
         p "Well, I asked him if he was OK, so I did the best I could."
     else:
-        p "Well, I guess that makes him happy, best of both worlds, you know,
-            both being normal with friends and insufferable to people he couldn't care less about..."
+        p "Well, I guess that works for him.
+            He gets to be normal with friends and dramatic with everyone else..."
     p "I think it's time for me to go get food..."
     p "Why is today like this? Nothing today has made sense."
     p "I guess I'm glad I've met people though!"
@@ -233,13 +238,14 @@ label intro:
     m "HUH? You think you could understand!"
     p "I can definitely try! Beats doing nothing for the rest of my break...
         I'm [riley_name], by the way."
+    p "You don't have to tell me everything, but if you want to vent, I can listen."
     $ millie_name = f"{millie_first} {millie_last}"
     m "Oh, introductions. [millie_name]. OK then, I'll tell you."
     m "It wasn't anything special. In fact, my life was straight-up common...
         for someone whose parents never were sure of their ability to keep me fed, at least."
     m "I survived, but was always aware of the newest technology, never being able to try it."
     m "It makes me wonder why they had advertisements where we were at all.
-        There was nobody there who could even consider buying name brands."
+        There was nobody there who would even consider buying name brands."
     m "Anyway, I figured out I have this rare ability called \"reversal.\" I can reverse most things."
     m "Like making an ice cube hot temporarily,
         or sending the force of someone's punch right back at them – that kind of thing."
@@ -250,7 +256,7 @@ label intro:
         in hopes of finally helping out the ones who placed their hopes in me."
     m "Do you get it now?"
     p "Honestly, I can empathize, but never truly understand. I do have my own share of problems, though."
-    p "To make this session even, something about me is that I can talk to spirits...
+    p "To make this conversation fair, something about me is that I can talk to spirits...
         I may have had an easier childhood, but it made me a target throughout my life."
     p "You see, people started to realize what the spirits are capable of."
     p "Not the same... but I hope you believe me when I say that I understand life can be unfair."
@@ -284,13 +290,14 @@ label intro:
     s "If so, if you have time, I would very much like for you to stop by my lab sometime!"
     s "I believe it could be helpful for our efforts!"
     menu:
-        "TODO option 1":
+        "Agree to visit the lab":
             p "Oh, um, I guess that could be cool. Thank you for your help, Professor. I'll see you later!"
-        "TODO option 2":
-            p "I don't want to be used like a lab rat. I need some time to think about it, Professor."
+        "Push back on the invitation":
+            p "I don't want to be treated like an experiment. I need some time to think about it, Professor."
     p "{i}It feels really odd that he's so eager... Are spirits that interesting?{/i}"
     p "{i}Sure, some of them are cool and mysterious, but most of them are annoying and childish,
-        always asking for my hair to make trees and flowers grow...{/i} (Walk away)"
+        always asking for my hair to make trees and flowers grow...{/i}"
+    "[riley_name] walks away."
 
     scene bg cafeteria outside
     b "Oh, hi Riley! Didn't think I'd run into you here! What's up?"
@@ -306,11 +313,11 @@ label intro:
             p "It kind of sounds like you're making fun of me...
                 No, unfortunately I have not shown everyone how \"super cool\" I am."
     b "Oh! I should have known, your hair looks the same way it did before,
-        and I don't think you had time to make another type of offering either!"
-    b "Spirits, if you can hear me, hang in there, I'm sure you'll have your fun soon."
-    b "At the very least, I'll have Riley here, have you make me my own olive tree next time they get their haircut!"
-    p "Haha, not a bad idea though, maybe then we can go volunteer in a hospital together or something,
-        I'm sure they'll be happy to have access to your ability as well."
+        so I guess you haven't had time to make another spirit offering either!"
+    b "Spirits, if you can hear me, be patient, I'm sure Riley will have an offering for you soon."
+    b "At the very least, maybe I can ask Riley to help me grow my own olive tree next time they get their haircut!"
+    p "Haha, not a bad idea. Maybe we really could volunteer at a hospital together sometime,
+        I'm sure they'd be glad to have access to your ability too."
     p "Figuring out what actually happened to someone can be hard,
         and some feel less embarrassed if mind magic is used instead."
     b "Oh, you volunteer, that's so cool! Yeah, for sure, I'll look forward to it!"
@@ -321,8 +328,8 @@ label intro:
     m "It must be tough in today's world... As they said, I'm [millie_first]."
     m "You probably shouldn't get too close with me... People never stuck around me for long at my last school
         since I love to challenge everyone's worldviews."
-    b "Oh, well if my worldview wouldn't survive getting to know someone who seems as interesting as you,
-        then it must be a pretty limited one anyway!"
+    b "Oh, well if being friends with Riley means getting to know interesting people like you,
+        then I think that's a good thing anyway!"
     b "And what narrow-minded individuals there must've been at that school! I wonder where that was?"
     m "It was in the Wild Garden, named for its general ambience and nature of the students..."
     b "I see... I've actually heard that WG can be a cruel place without great education."
@@ -330,7 +337,8 @@ label intro:
     m "Well, you're right about the lack of care, but I think I'm proof enough that we aren't all bad."
     b "Of course, you indeed shine very brightly, more so than those you thought were like me, that's for sure!"
     b "We both know Riley too, so hopefully we can talk more!"
-    m "Sure, whatever. Probably won't make a difference, though, but it couldn't hurt. Would be nice to see home too."
+    m "Sure, whatever. Probably won't make a difference, though, but it couldn't hurt.
+        Would be nice to feel a little closer to home too."
     show fry normal at left
     f "Aha! There you are, my faithful assistant!"
     f "I have to say I'm impressed... expanding your social network so well!"
@@ -338,7 +346,7 @@ label intro:
     p "Once again, my name is Riley, and since when was I your assistant?"
     m "Um, Riley, do you know this guy?"
     p "Oh, um, yes. This is [fry_first]... [fry_first], this is [millie_first] and [beatrice_first]... You can drop the act now."
-    p "I'm sorry, he isn't always like this."
+    p "I'm sorry, he's not always this intense."
     p "{i}I have no idea what's going to happen today anymore.{/i}"
     p "{i}All of these... friends... who know each other through me. I could never have imagined this.{/i}"
     f "Ha, foolish assistant, what else would you be?"
@@ -361,7 +369,7 @@ label intro:
         But in our present moment, people like him are starting to understand that we need technology to advance."
     f "That technology needs magic users, so excuse me if you feel like you're being treated unfairly!
         To me, it's unfair that your power is strong enough that you're useful to him! I would love to join his lab!"
-    m "Technology is impartial blah blah blah... it may be equalizing for those who don't have useful abilities,
+    m "Technology is impartial blah blah blah... it may level the playing field for people who don't have useful abilities,
         but that doesn't mean it's fair."
     m "Do you know what kinds of technology the lower classes can use?"
     m "They're lucky if they can use something that's five years old!
@@ -400,11 +408,11 @@ label intro:
         While I don't really like them, the rest of the staff haven't really done anything wrong."
     m "It's just the white-coated narcissist."
     menu:
-        "TODO option 1":
+        "Agree that Mattias is the problem":
             p "Got it, and to be honest, I didn't really care for him either."
             p "When I was talking to him, it seemed like he just wanted to see whether I would be useful or not."
             m "Right? I'm glad you agree."
-        "TODO option 2":
+        "Defend the lab's mission":
             p "If the rest of the staff are lovely, I wonder how bad he really is...
                 Isn't he working on technology that's going to improve humanity forever?"
             m "Yes, I guess you could look at it that way..."
@@ -480,7 +488,7 @@ label intro:
     jump branch_point
 
 label branch_point:
-    # TODO: Black screen with Earlier that day in white written
+    centered "Earlier that day"
     scene bg cafeteria outside
     show fry normal at left
     show millie normal at right
@@ -494,6 +502,8 @@ label branch_point:
     $ route_count = int(chosen_beatrice) + int(chosen_millie) + int(chosen_fry)
     if route_count == 0:
         p "Huh? Why am I here again? The world is... still OK!"
+        p "No... no, I was just outside. I saw everything destroyed."
+        p "I really am back. Somehow, I'm back."
         p "If I'm here, maybe I can actually prevent it from happening."
         p "But I don't think I have much time. I've got to hurry. Maybe that machine caused this to happen?"
     else:
@@ -521,6 +531,7 @@ label branch_point:
     m "I can't understand what you can see in the guy."
     p "Haha! A difference in opinion, surely there's no need to fight over this!"
     if route_count > 0:
+        p "{i}I need to decide whether to intervene now or keep investigating first.{/i}"
         menu:
             p "{i}Actually, now might be a good time to try to prevent the disaster from happening again,
                 and I think I need to get someone to help me.{/i}"
@@ -530,7 +541,7 @@ label branch_point:
                 jump initial_leave
             "Convince [fry_first] to help" if chosen_fry:
                 jump initial_fix
-            "Actually, there is more I want to investigate first":
+            "I still need to investigate more first":
                 pass
     p "Actually, I'm quite interested in this lab. There's a cool machine in there, right?"
     m "Yeah, I guess so, if you could call anything that man contributes \"cool\"..."
@@ -548,7 +559,7 @@ label branch_point:
 label millie_day:
     $ last_chosen = millie_first
     $ chosen_millie = True
-    # TODO: black screen with \"INTENT\" Written in white appears
+    centered "INTENT"
     p "[millie_first], you'd be able to take me, right?"
     m "I could take you... but I would caution you about doing anything related to that man."
     p "No, I think I need to do this. I need to get all the info I can, right?"
@@ -655,7 +666,7 @@ label beatrice_day:
     p "[beatrice_first], could you come with me?
         I would like to talk to someone who is unrelated and unbiased."
     b "Oh, um, are you sure? I'm not sure that's a good idea."
-    # TODO: A blank screen shows up, with nothing but the word \"Reality\" on it
+    centered "Reality"
     hide fry
     hide millie
     p "Beatrice, I alluded to this earlier, but I need your help with something."
@@ -669,7 +680,7 @@ label beatrice_day:
     b "OK then, let's do it."
 
     scene bg ruins
-    scene bg outside
+    scene bg lecture outside
     show beatrice normal
     b "What? How-How could you have these memories?"
     p "I don't know, there was a butterfly, I don't know what exactly happened,
@@ -719,7 +730,8 @@ label beatrice_day:
     p "You think, I'm the reason that everything went so horribly wrong?"
     p "Because they activated the unfinished machine, when I had attracted more true magic to it..."
     b "It's the only thing that makes sense."
-    p "Oh I, I mean, me? All of it, because of me... (Sob)"
+    p "Oh I, I mean, me? All of it, because of me..."
+    "[riley_name] sobs."
     b "Hey, [riley_first], [riley_first], it's OK, you didn't know."
     p "But-but you've seen what I have, all that was because of me."
     p "How am I supposed to deal with that?"
@@ -806,7 +818,7 @@ label beatrice_day:
     b "I've been inside people's heads, [riley_first], and the amount of darkness I can sense is immense..."
     b "Even those with good intentions, like [millie_first], can become blind to the fact they have become darkness as well."
     b "But you weren't like that, it's why I wanted to help you so much.
-        You are one of those lights fry, and right now, you're needed."
+        You are one of those lights, [riley_first], and right now, you're needed."
     b "We can find a way out of this, me and you, whichever version of me ends up doing it with you, whether I reset too,
         without memories, or stay here as you go meet another me."
     b "I know you can solve it, solve how to make things better, and seize a brighter future."
@@ -833,7 +845,7 @@ label fry_day:
     $ chosen_fry = True
     p "{i}Of course! If it is because of the machine, like I suspect,
         then surely [fry_first] can help! He knows machines.{/i}"
-    # TODO: Blank Screen with just the word mechanism
+    centered "mechanism"
     p "[fry_first], would you come with me? I need to look into something..."
     f "Oh, um, sure! I'm sure I can help answer technical questions."
     m "Hey! I could answer those too!"
@@ -853,8 +865,8 @@ label fry_day:
     f "The condenser essentially uses the more science anchored Frederick Particles to generate true magic,
         which is the kind spirits like to use, which has less scientific explanations linked to it."
     f "However, it is explicitly designed to store this true magic up, and then channel it though an entirely separate set of technology."
-    f "I can't tell what the final function of it would be, as it seems that several of the parts are based off these magic swords,
-        which I can't analyze as well, but I can figure out that this is non-functional right now..."
+    f "I can't tell what its final function is. Several of the parts are based on these magic swords,
+        so I can't analyze those as well, but I can tell the machine is non-functional right now..."
     f "In fact, under the parameters of this machine, I believe the true magic would end up dissipating,
         or even return to the spirit side of reality."
     f "The spirits would be utterly unconcerned with having a bit extra around,
@@ -922,11 +934,10 @@ label fry_day:
     f "I've been guilty of this too."
     f "My power is to know how to fix what's broken... but it only works on machines... It didn't help when I looked all around,
         and saw everything that was broken, but it wasn't technology, I couldn't understand it..."
-    f "If I could have chosen, if I could choose the objective of the machine, I would have chosen to create the miracle of understanding,
-        of people seeing each other as themselves, and understanding their problems.
-        I feel like I'm so close to understanding it, how to fix the broken parts of humanity,
-        the parts of us that make everyone worse, that break more and more souls,
-        but I'm not there yet..."
+    f "If I could have chosen the machine's purpose, I would have chosen a miracle of understanding,
+        of people seeing each other clearly and understanding each other's pain.
+        I feel like I'm close to understanding how to mend the broken parts of humanity,
+        the parts of us that keep hurting each other, but I'm not there yet..."
     f "At some point, a miracle would have done us some good, it might not have fixed things,
         but it might have started a process that leads to the solution."
     f "Make sure something changes, and out of that change maybe we could have
@@ -961,7 +972,7 @@ label initial_reverse:
     p "Oh, yeah, it actually is something like that... Good guess."
     p "Anyway, his machine is broken, and I have to do something...
         After thinking about it, I think your power is the best way to do that."
-    p "We need to reverse the directive of the machine, have it do the opposite of what was intended."
+    p "We need to reverse the function of the machine, have it do the opposite of what was intended."
     p "But what that will end up doing is more or less erasing magic from the world..."
     m "What, what do you mean more or less... and why would that be acceptable to anyone?"
     p "Because the alternative is the destruction of everything... It's because the machine is broken..."
@@ -974,7 +985,7 @@ label initial_reverse:
     p "Yeah, I know, it's not what I would call ideal either."
     p "However, I have an idea, it might make things better for you specifically,
         but that will be the reality for the world as a whole... but I'll let you know only if it works..."
-    p "But it still should give you an advantage, maybe help your family rise out of the bit there in...
+    p "But it still should give you an advantage, maybe even help your family climb out of the situation they're in...
         but it will have a cost."
     m "We'll see... If it works out, you can tell me then, for now, let's get this done...
         Wouldn't want to let that stupid genius make himself a monarch while we deliberate."
@@ -1092,9 +1103,8 @@ label initial_fix:
     f "Huh? I don't understand... but I guess you don't have any reason to lie,
         I will confirm the stuff about him being bad, but, for now, I'll take you at your word."
     f "Besides, the things he has made are generally good, so I have no reason to suspect this one."
-    f "I think I will be a bit broken when I find out the truth for sure, so I will fix the machine first,
-        but I can definitely fix that machine, and trust that you know what you are doing."
-    # TODO: If riley has seen different endings this can change, maybe they can think im not sure if it does what it actually does
+    f "I think I will be a bit broken when I find out the truth for sure, so I will fix the machine first.
+        Once I see it, I should be able to fix it, and for now I'll trust that you know what you're doing."
     p "Thank you, I don't really know for sure what the machine does either."
     p "It will change the world, and I'm not sure if it will be a world you prefer,
         but the alternative is the end of the world, so I agree it's worth it."
@@ -1130,7 +1140,7 @@ label initial_fix:
     f "At least with technology you could be mostly safe, even if you were unhappy."
     f "I for one don't think the slightly increased chance you can work for happiness worth it
         for the much increased chance of being eaten by a dragon."
-    f "It's also fascinating that I know dragons exist, well I guess they must if ever root can be combined with their scales."
+    f "It's also fascinating that I know dragons exist. I guess they must if every root can be combined with their scales."
     p "I see. Not bad points."
     show mattias normal at left
     s "Hello denizens of this new world! It seems my machine activated, somehow, and a new world has been created."
@@ -1176,8 +1186,8 @@ label final_reset:
     f "I finally found someone I could trust to see me beyond just my power,
         who saw that I had value and wasn't to be pitied... Please, tell us what's wrong, I'm sure we can help."
 
-    scene bg butterfly
-    # no character appear because they should be drawn on the background image
+    scene bg cafeteria outside
+    show butterfly normal
     l "Don't despair, for it will be OK."
     l "I have finally gathered enough power, and [riley_first] has as well."
     l "Now, I can appear even to those without the sight... and help them as well."
@@ -1221,8 +1231,8 @@ label final_reset:
     b "That the machine destroys the world because [riley_first] is too cool?
         And because the professor didn't think including a limiter would be worth it?"
     f "That the professor is actually an egomaniac who does no work,
-        and also how he was so obsessed with whatever that machine does that he made."
-    f "A miracle making machine and was so confident it would do what's best that he didn't listen to anyone's ideas?"
+        and that he was so obsessed with what that machine could do that he made"
+    f "a miracle-making machine and was so confident it would know best that he didn't listen to anyone else's ideas?"
     m "Or the fact the machine itself is meant to turn the world into a isekai anime where he's the protagonist who becomes king?"
     p "With everything summarized like that it seems like [mattias_first] is the main source of the problems."
     p "Stopping him won't inherently fix anything, but we can certainly keep him from interfering while we figure out how to move forward."
@@ -1311,8 +1321,8 @@ label final_reset:
     b "Wait, you don't seriously think that, do you, it's mine too, I've seen what you have, and I agree."
     b "We have such beautiful dreams, but beauty is in the eye of the beholder. We think that we know what's right,
         and then dream a reality where that is true."
-    b "But we deceive ourselves in thinking that it benifits everyone and not just us. That our dreams should be everyone's.
-        That our understanding should be universal."
+    b "But we deceive ourselves into thinking it benefits everyone and not just us. That our dreams should be everyone's.
+        That everyone should understand the world the way we do."
     b "But forcing your ideas, even if you think it's for the best, just stifles each other's dreams...
         we have to find a balance, a way to make everyone happy, but no one content...
         to have them keep dreaming, reaching for what's next, but not so angry that they snuff the light of others out."
@@ -1413,7 +1423,7 @@ label final_leave:
     p "They'll take the machine, and my humanity..."
     m "WHAT?"
     f "Why... how?"
-    p "It's not so bad... you three still be able to see me...
+    p "It's not so bad... you three will still be able to see me...
         but I will join them, as a nature spirit... I'll still look like myself though."
     p "That's the price, I will save everyone, at the cost of my human existence."
     p "The cost to heal was myself... the cost to remain here, for now, is the machine..."
@@ -1461,8 +1471,6 @@ label final_leave:
     b "I won't give you my hair though!"
     p "Nor did I ask for it."
 
-    scene bg end
-    # TODO: Image of Beatrice with Riley floating nearby
     jump end
 
 label final_reverse:
@@ -1477,8 +1485,8 @@ label final_reverse:
         but are you truly prepared to live your lives in the shadows?"
     p "Actually, we might not need to... you make a pretty good villain Mattias! We can blame the whole magic removal thing on you,
         and then frame it as you did it to become a spirit speaker yourself... and then you can be like a supervillain!"
-    p "Where us good Spirit Speakers would be there to stop your machinations!
-        You don't even have to hurt anyone, as we could coordinate."
+    p "Where we good spirit speakers would be there to stop your machinations!
+        You don't even have to hurt anyone, since we could coordinate."
     p "Or you could also go all in with evil, either way works! We can also present the amount of spirit speakers increasing
         as a way of the world balancing everything... this might be pretty fun."
     p "We won't have to hide, as nobody will be bitter at the people with powers defending them."
@@ -1510,8 +1518,8 @@ label final_reverse:
     m "What if we formed a band, I can play guitar pretty well,
         and something tells me [beatrice_first] is probably at least a decent singer as well!"
     p "I can learn drums, if that works, I've studied a little bit and they do seem fun!"
-    m "Great! Also, maybe when we're superhearing, we can focus on giving publicly and compassion
-        towards my hometown, and any underaddressed community."
+    m "Great! Also, maybe when we're doing hero work, we can focus on public giving and compassion
+        toward my hometown, and any underaddressed community."
     m "We can make sure this world doesn't eat them alive, now that magic is less of a factor."
     b "Of course, I know that they will appreciate that!"
     p "Right, it's the least we can do."
@@ -1524,9 +1532,6 @@ label final_reverse:
     b "Yep! But soon they'll face the wrath of the evil doctor [mattias_last]!"
     p "Of course, but we'll stop him every time!"
 
-    scene bg end
-    # TODO: Picture of everyone dressed as superheros, maybe just masks and capes though,
-    # but Mattias is in full superfillain costumes
     jump end
 
 label final_fix:
@@ -1572,15 +1577,15 @@ label final_fix:
     f "Yeah, you may have come up with ideas, but you did so little work on all of your creations!
         For once you should actually work to do something for other people!"
     b "Naturally there needs to be more protectors than just us! We may still have a massive grudge against you for
-        what you accidentally were going to do to the world and what you wanted to do to become kind,
+        what you accidentally were going to do to the world and what you wanted to do to become king,
         but that doesn't mean you won't have a role of your own."
     b "Only we know what happened today... find people you can call friends as well! And use your powers,
         and help us keep people from being eaten by dragons!"
     s "I see... so that's the life I should live... maybe I can find fulfillment in that...
         or at the very least maybe I can find people who I can befriend as well."
-    p "Yep! Now, let's do the first step which is to go and seek people panicking,
-        and help them build or find an empty built town to live in,
-        and start spreading the world of how we as humans can make our way in this world."
+    p "Yep! Now, let's do the first step, which is to go find people who are panicking,
+        help them build or find an empty town to live in,
+        and start spreading the word of how we as humans can make our way in this world."
     m "And not get eaten by dragons?"
     b "I would very much prefer to avoid that."
     f "Yeah, me too!"
@@ -1589,11 +1594,11 @@ label final_fix:
     s "Thank you, I too would not want to get first hand knowledge of a dragon's hunting rabbits."
     p "Right, then let's go! To this new world!"
 
-    scene bg end
-    # TODO: Image of Riley, Beatrice, Millie and Fry setting forth into a new world, Mattias is there too, not quite as eager
     jump end
 
 label end:
+    scene bg stairs
+    show butterfly normal
     l "It seems you have found a future you're satisfied with, I'm happy for you."
     menu:
         l "But if any doubt remains, this path is not yet set in stone. Feel free to use my power once more, just remember to return here
