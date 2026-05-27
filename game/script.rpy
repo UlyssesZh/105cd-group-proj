@@ -1001,19 +1001,19 @@ label initial_reverse:
     p "Using the machine itself as an offering, I strengthen the connections that spirit speakers use to communicate with spirits...
         I also gave you access to that connection."
     m "Wait, does that mean?"
-    p "Yes, we still have abilities magic even in this world without it."
+    p "Yes, we still have ability-based magic even in this world without it."
     p "But that also means we'll have to hide it, we'll certainly be able to use it to our advantage,
         but we should probably stay in the shadows..."
     p "But regardless we can definitely help your family, but we certainly have to limit the people we have contact with."
     m "That's equally cool and very not cool, but I guess that's how things are, we have a responsibility too, right?
         To be the only kind of equalizer this world has, even if it means we have to hide to do it."
-    p "Yes, I think Fry will be fine though, and we can definitely find millie later,
+    p "Yes, I think Fry will be fine, though, and we can definitely find [millie_first] later,
         she's understanding enough to help us somehow..."
     m "I guess, but this world is still pretty bleak right, and I hate to have to hide in the shadows forever..."
     p "Unfortunately, our path is set, we probably will have an extended lifespan though!"
     p "I've heard spirit speakers live a really long time, to the point no one is sure how many of us are alive,
         despite being born every 100 years."
-    m "I see, Guess well be lonely too, oh well, guess that's just how things are."
+    m "I see. Guess we'll be lonely too. Oh well, guess that's just how things are."
     p "I guess so."
 
     jump initial_ending
