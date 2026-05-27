@@ -1472,7 +1472,7 @@ label final_reverse:
     m "Yeah, I think we could theoretically figure out how to avoid world ending machines,
         but it wouldn't be the worst thing not to worry about that either!"
     b "This works out for me! I can't wait to see all the cute spirits!"
-    f "I don't need magic if I have technology, but I guess it's ok to join your secret wizards club as well."
+    f "I don't need magic if I have technology, but I guess it's OK to join your secret wizards club as well."
     s "So, this is what you're going for... I suppose it will make the world more boring, I suppose,
         but are you truly prepared to live your lives in the shadows?"
     p "Actually, we might not need to... you make a pretty good villain Mattias! We can blame the whole magic removal thing on you,
@@ -1485,7 +1485,7 @@ label final_reverse:
     s "I see, but make no mistake, my pride won't allow it to be an act!
         Prepare yourself from stopping me from robbing all the banks!"
     m "All? That's so like you, we'll just have to stop you then!"
-    b "This is kind of exciting! Though i'll be on support duty, [millie_first] and [fry_first] can do the fighting.
+    b "This is kind of exciting! Though I'll be on support duty, [millie_first] and [fry_first] can do the fighting.
         And [riley_first] is already trained in support type stuff as well!"
     f "Woah, that sounds like a lot... I guess that's fine, as long as my public identity is of the millionaire tech genius sponsor!"
     p "Yeah, that should be fine, sounds like we're on the same page then!"
@@ -1506,17 +1506,17 @@ label final_reverse:
     b "You know, based on this and the whole king thing, you really have a flair for the dramatic, don't you?
         It's like your subconscious was always wanting you to be a villain."
     s "Um, no comment."
-    p "Anyway, what will the rest of us do? We can't just be superheros."
+    p "Anyway, what will the rest of us do? We can't just be superheroes."
     m "What if we formed a band, I can play guitar pretty well,
-        and something tells me [beatrice_first] probably is at least a decent singer as well!"
+        and something tells me [beatrice_first] is probably at least a decent singer as well!"
     p "I can learn drums, if that works, I've studied a little bit and they do seem fun!"
     m "Great! Also, maybe when we're superhearing, we can focus on giving publicly and compassion
-        towards my hometown, and any underadressed community."
+        towards my hometown, and any underaddressed community."
     m "We can make sure this world doesn't eat them alive, now that magic is less of a factor."
     b "Of course, I know that they will appreciate that!"
-    p "Right it's the least we can do."
+    p "Right, it's the least we can do."
     f "Ha, I will be a rebellious rich person! I will strive for wealth inequality."
-    m "Ok tech bro."
+    m "OK, tech bro."
     f "I'm not a tech bro!"
     m "Keep telling yourself that!"
     p "Anyway, it seems like our future is bright, this is going to be fun...
