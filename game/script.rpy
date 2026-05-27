@@ -835,12 +835,12 @@ label fry_day:
         then surely [fry_first] can help! He knows machines.{/i}"
     # TODO: Blank Screen with just the word mechanism
     p "[fry_first], would you come with me? I need to look into something..."
-    f "Oh, um sure! I'm sure I can help answer technical questions."
+    f "Oh, um, sure! I'm sure I can help answer technical questions."
     m "Hey! I could answer those too!"
     p "Shh. I need him to distract [mattias_first] if he ends up showing up... I think his ability will be useful too,
         take the day off, I'll make sure there's nothing to do in there today anyway."
-    m "Ok, I see what you mean... Guess I'll take the day off!"
-    p "Now [fry_first]! Aren't you excited to see your idols lab?"
+    m "OK, I see what you mean... Guess I'll take the day off!"
+    p "Now [fry_first]! Aren't you excited to see your idol's lab?"
     f "Yep! I can't wait!"
     p "Then let's go!"
 
@@ -848,13 +848,13 @@ label fry_day:
     show fry normal
     p "Look, here is the machine the professor has been working on..."
     p "Is there any chance you can tell what it does? I'm a bit curious."
-    f "Um, yeah I can see if I can figure it out..."
+    f "Um, yeah, I can see if I can figure it out..."
     f "Huh, interesting... It seems to be essentially two parts, a condenser of magic and a utilizer."
     f "The condenser essentially uses the more science anchored Frederick Particles to generate true magic,
         which is the kind spirits like to use, which has less scientific explanations linked to it."
     f "However, it is explicitly designed to store this true magic up, and then channel it though an entirely separate set of technology."
-    f "I can't tell what the final function of it would  be, as it seems that several of the parts are based off these magic swords,
-        which i can't analyze as well, but I can figure out that this is non-functional right now..."
+    f "I can't tell what the final function of it would be, as it seems that several of the parts are based off these magic swords,
+        which I can't analyze as well, but I can figure out that this is non-functional right now..."
     f "In fact, under the parameters of this machine, I believe the true magic would end up dissipating,
         or even return to the spirit side of reality."
     f "The spirits would be utterly unconcerned with having a bit extra around,
@@ -862,7 +862,7 @@ label fry_day:
     p "Wait, they have access to that much power? Then why do I need to give them stuff then?"
     f "That... is unknown, the two explanations are they just like getting things,
         or maybe that they need a connection to this side to actually transmit a proportional amount of true magic, in any case..."
-    f "This machine needs the guidance mechanism fixed... And i know how to do it."
+    f "This machine needs the guidance mechanism fixed... And I know how to do it."
     p "{i}Maybe that will fix things!{/i}"
     p "Then do it then!"
     f "Um, maybe, but I'll have to figure out what the mechanism does first...
@@ -877,19 +877,19 @@ label fry_day:
     b "I finally found you!"
     b "Something's happened to [millie_first]! She fell down the stairs! Her leg is broken!"
     p "What, [millie_first]? How could this happen!"
-    b "I don't know, but the spirits must be able to help right, I can help you with the offering,
+    b "I don't know, but the spirits must be able to help, right? I can help you with the offering,
         but I'm worried about her... She'll never be able to afford the hospital bills if the ambulance finds her first!"
-    p "Sorry, but could you wait just a moment? This machine, I have to help fry fix it, then I can go help [millie_first]."
+    p "Sorry, but could you wait just a moment? This machine - I have to help [fry_first] fix it, then I can go help [millie_first]."
     b "This machine? It can't be that urgent... We can leave [fry_first] a note, if you explain, I'm sure he'll understand!"
     b "And besides, even if it's about to explode or something, it has an off switch! See I can even switch it for you."
     # TODO: Machine activation effect/noise
     $ last_triggerer = beatrice_first
     p "Oh no... Beatrice, that was the \"On\" switch..."
     show fry normal at left
-    f "Oh, hi... My fellow human! Um, are you doing ok... Because I can assist you if you require it of this genius scientist!"
+    f "Oh, hi... My fellow human! Um, are you doing OK... Because I can assist you if you require it of this genius scientist!"
     f "Oh whatever..."
     p "[fry_first], we have to go! Everyone runs!"
-    b "Huh, oh, ok..."
+    b "Huh, oh, OK..."
     f "If you think that is the best course of action! If you don't mind assisting me with where to go...
         I will allow you to assist me in making my glorious escape!"
     p "Here, [fry_first], you can follow me, I can help you, [beatrice_first], you get out of here on your own."
