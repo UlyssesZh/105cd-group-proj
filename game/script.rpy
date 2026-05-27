@@ -293,7 +293,7 @@ label intro:
         always asking for my hair to make trees and flowers grow...{/i} (Walk away)"
 
     scene bg cafeteria outside
-    b "Oh Hi Riley! Didn't think I'd run into you here! What's up?"
+    b "Oh, hi Riley! Didn't think I'd run into you here! What's up?"
     p "Huh, [beatrice_first]?"
     show beatrice normal
     p "Oh, hello!"
@@ -317,20 +317,20 @@ label intro:
     show millie normal at right
     m "Hey, Riley, who's this?"
     p "Oh, hi [millie_first], this is [beatrice_first]."
-    m "Well then, hi [beatrice_first]! I assume you're pretty optimistic right?"
+    m "Well then, hi [beatrice_first]! I assume you're pretty optimistic, right?"
     m "It must be tough in today's world... As they said, I'm [millie_first]."
     m "You probably shouldn't get too close with me... People never stuck around me for long at my last school
         since I love to challenge everyone's worldviews."
     b "Oh, well if my worldview wouldn't survive getting to know someone who seems as interesting as you,
         then it must be a pretty limited one anyway!"
-    b "And what narrow-minded individuals there must've been at that school! I wonder where it was?"
+    b "And what narrow-minded individuals there must've been at that school! I wonder where that was?"
     m "It was in the Wild Garden, named for its general ambience and nature of the students..."
     b "I see... I've actually heard that WG can be a cruel place without great education."
     b "So much darkness is targeted towards students that it now grows, with none caring enough to help."
     m "Well, you're right about the lack of care, but I think I'm proof enough that we aren't all bad."
     b "Of course, you indeed shine very brightly, more so than those you thought were like me, that's for sure!"
     b "We both know Riley too, so hopefully we can talk more!"
-    m "Sure, whatever, probably won't make a difference though, but couldn't hurt, would be nice to see home too."
+    m "Sure, whatever. Probably won't make a difference, though, but it couldn't hurt. Would be nice to see home too."
     show fry normal at left
     f "Aha! There you are, my faithful assistant!"
     f "I have to say I'm impressed... expanding your social network so well!"
@@ -342,9 +342,9 @@ label intro:
     p "{i}I have no idea what's going to happen today anymore.{/i}"
     p "{i}All of these... friends... who know each other through me. I could never have imagined this.{/i}"
     f "Ha, foolish assistant, what else would you be?"
-    f "Anyway, In my fourth class of the day with Professor [mattias_last], he mentioned he met a very interesting Spirit Speaker!"
+    f "Anyway, in my fourth class of the day with Professor [mattias_last], he mentioned he met a very interesting Spirit Speaker!"
     f "May that be you, talented assistant?"
-    p "Um yeah, he seemed interested in that... No idea why though."
+    p "Um, yeah, he seemed interested in that... No idea why, though."
     p "I can't believe he would mention it during class."
     m "[mattias_last], you mean the Professor?"
     m "I hate that man... maybe if he did more but gave vague directions,
@@ -371,7 +371,7 @@ label intro:
     b "Which is completely understandable, but indicates that you may not reach a middle ground very soon."
     m "Yeah, sure whatever..."
     f "Hold up, you still haven't apologized for slandering Professor [mattias_last]. This injustice must be remedied!"
-    b "Isn't it ok for people to have their opinions about other people... everyone's perspective is different, right?"
+    b "Isn't it okay for people to have their opinions about other people... everyone's perspective is different, right?"
     f "I wouldn't expect a normie to understand!"
     b "Oh, um. I've just remembered I have something to do... see you later [riley_first] and [millie_first]..."
     hide beatrice
@@ -386,10 +386,10 @@ label intro:
     m "Now, I think [fry_first] mentioned that you were approached by the annoying professor."
     m "I can show you to that lab... I think I'll be able to convince you not to even consider working with that man,
         especially once you see how it is there."
-    p "Oh, ok, so interesting. Um, [fry_first], I'll talk to you later"
+    p "Oh, okay, so interesting. Um, [fry_first], I'll talk to you later."
     f "Sounds good, I guess..."
     hide millie
-    f "{i}Probably will be ok if I follow them right? I want to see the lab!{/i}"
+    f "{i}Probably will be okay if I follow them, right? I want to see the lab!{/i}"
 
     scene bg lab entrance
     show millie normal
