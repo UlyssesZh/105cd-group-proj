@@ -49,12 +49,12 @@ label intro:
         It's not like my ability is invisibility or anything...
         Maybe I would almost prefer to be laughed at..."
     p "But maybe I'd prefer that invisibility were my ability.
-     After all, being able to communicate with nature spirits and all that is kind of
-      boring if they can't really outshine humans in the first place..."
+        After all, being able to communicate with nature spirits and all that is kind of
+        boring if they can't really outshine humans in the first place..."
     # TODO: image of protag looking up at spirits
     p "Yes, I'm talking to you all."
     p "Although, I guess versatility is a plus, but who cares if the spirits heal the scrape you got from
-     tripping on the stairs {b}if they were the ones who grew the roots that tripped you{/b}..."
+        tripping on the stairs {b}if they were the ones who grew the roots that tripped you{/b}..."
     show beatrice normal
     b "Um, who are you talking to?"
     # TODO: image of protag starting to walk away
@@ -62,34 +62,34 @@ label intro:
     b "Wait! Can you talk to the spirits??!! That's sooooo cool!!!"
     b "What are they like?? What do they say?!
         I mean, we see them in drawings, but seeing them in reality is so interesting!
-         And it's really rare too!!"
+        And it's really rare too!!"
     # TODO: image of protag talking to beatrice
     $ temp = False
     menu:
         "Open up about the spirits":
             p "Oh, um, I'm surprised you care that much about them. I mean, it can definitely
-             be useful sometimes, but I usually need to work out deals with them. They're
-              pretty kind, and they're cool to talk to!"
+                be useful sometimes, but I usually need to work out deals with them. They're
+                pretty kind, and they're cool to talk to!"
         "Avoid the topic":
             p "Oh, I don't really like when people talk to me about them. It brings up some
-             challenging stuff from my past."
+                challenging stuff from my past."
             $ temp = True
         "Complain about the spirits":
             p "Oh, thanks, but they can be pretty inconvenient. For example, I recently had to
-             give them a handmade water bottle holder in exchange for them growing a plant
-              instantly. Some people can do that without having to talk to the spirits."
+                give them a handmade water bottle holder in exchange for them growing a plant
+                instantly. Some people can do that without having to talk to the spirits."
             p "And then there's the pranks... ({i}sigh{/i})"
     p "Anyway, my name is [riley_name]. I haven't met many people at this school yet, so it's
-     nice to meet you!"
+        nice to meet you!"
     $ beatrice_name = f"{beatrice_first} {beatrice_last}"
     if temp:
         b "Oh, my apologies. No need to dig too deep into our pasts – we just met!"
     else:
         b "Wow! That's incredibly fascinating, like you have a magic system all to yourself!
-         I'm [beatrice_name], and I'm fairly new too! You're the first person I've really
-          talked to..."
+            I'm [beatrice_name], and I'm fairly new too! You're the first person I've really
+            talked to..."
     b "I guess it's only fair that I tell you about my power too! Mine is Memory Viewing.
-     If someone permits it, I can look at any memory they have. It's just like a movie!"
+        If someone permits it, I can look at any memory they have. It's just like a movie!"
     b "It's not super helpful, but it's really cool!"
     # TODO: image of beatrice walking away
     b "Anyway, I've got to go to class. See you around, new friend!!"
@@ -569,7 +569,7 @@ label millie_day:
     m "Don't see why you're in such a rush! Surely it's not that urgent?"
     p "It {i}is{/i}! I need to figure it out, find out why,
         [mattias_first] must be hiding something about that machine!"
-    m "Oh, OK... if you're looking for dirt, maybe we can look in his office - the professor's, I mean."
+    m "Oh, OK... if you're looking for dirt, maybe we can look in his office – the professor's, I mean."
     p "That sounds like a great place to start!"
 
     scene bg office
@@ -891,7 +891,7 @@ label fry_day:
     p "What, [millie_first]? How could this happen!"
     b "I don't know, but the spirits must be able to help, right? I can help you with the offering,
         but I'm worried about her... She'll never be able to afford the hospital bills if the ambulance finds her first!"
-    p "Sorry, but could you wait just a moment? This machine - I have to help [fry_first] fix it, then I can go help [millie_first]."
+    p "Sorry, but could you wait just a moment? This machine – I have to help [fry_first] fix it, then I can go help [millie_first]."
     b "This machine? It can't be that urgent... We can leave [fry_first] a note, if you explain, I'm sure he'll understand!"
     b "And besides, even if it's about to explode or something, it has an off switch! See I can even switch it for you."
     # TODO: Machine activation effect/noise
