@@ -18,18 +18,37 @@ define config.name = _("The Papillion Effect")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "0.1.0"
+define config.version = "0.2.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+A visual novel about magic and time travel.
+
+This is a group project for a class assignment.
+{a=https://github.com/UlyssesZh/105cd-group-proj}Source code{/a}.
+
+Third-party assets credits:
+{a=https://opengameart.org/content/mouse-click}mouse click{/a} by LFA (CC0),
+{a=https://opengameart.org/content/sci-fi-vehicle-sound}Sci-Fi Vehicle Sound{/a} by Ogrebane (CC0),
+{a=https://opengameart.org/content/fantasy-magic-spell}Fantasy Magic Spell{/a} by Almitory (CC0),
+{a=https://freemusicarchive.org/music/pamela-yuen/paws-for-a-while/second-sky}Second Sky{/a} by Pamela Yuen (CC-BY-4.0),
+{a=https://freemusicarchive.org/music/Ketsa/concrete-flowers/desert-winds-1}Desert Winds{/a} by Ketsa (CC-BY-4.0),
+{a=https://freemusicarchive.org/music/amarent/anew/tamarin-1}Tamarin{/a} by Amarent (CC-BY-NC-4.0),
+{a=https://freemusicarchive.org/music/happiness-in-music/inspire-piano/piano-music-inspire}Piano Music Inspire{/a} by Happiness In Music (CC-BY-NC-4.0),
+{a=https://freemusicarchive.org/music/anthony-attard/single/through-the-arches}Through the Arches{/a} by Anthony Attard (CC-BY-SA-4.0),
+{a=https://freemusicarchive.org/music/pamela-yuen/paws-for-a-while/playtime}Playtime{/a} by Pamela Yuen (CC-BY-4.0),
+{a=https://freemusicarchive.org/music/pamela-yuen/paws-for-a-while/no-turning-back-1}No Turning Back{/a} by Pamela Yuen (CC-BY-4.0),
+{a=https://freemusicarchive.org/music/mr-smith/synchromatic/badlands}Badlands{/a} by Mr Smith (CC-BY-4.0),
+{a=https://freemusicarchive.org/music/tebo-steele/single/intelligence-networkmp3}Intelligence Network.mp3{/a} by Tebo Steele (CC-BY-SA-4.0).
+{a=https://freemusicarchive.org/music/blv8ion/sunset/audioinsmusic-inspired-harmonymp3}Audioinsmusic - Inspired Harmony.mp3{/a} by BLV8ION (CC-BY-NC-ND-4.0).
 """)
 
 
@@ -62,7 +81,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "inspired-harmony.mp3"
 
 
 ## Transitions #################################################################
@@ -210,4 +229,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/test-project"
+define build.itch_project = "UlyssesZhan/the-papillion-effect"

@@ -1,4 +1,11 @@
-define p = Character("[riley_name]", color="#000000")
+define centered = Character(None,
+    what_xalign=0.5,
+    window_xalign=0.5,
+    window_yalign=0.5,
+    what_text_align=0.5,
+    )
+
+define p = Character("[riley_name]", color="#000000", image="riley")
 define riley_first = "Riley"
 define riley_last = "Papillion"
 define riley_name = f"{riley_first} {riley_last}"
@@ -23,7 +30,7 @@ define mattias_first = "Mattias"
 define mattias_last = "Sibyll"
 define mattias_name = f"{mattias_first} {mattias_last}"
 
-define l = Character("[butterfly_name]", color="#a0aa49", image="butterfly")
+define l = Character("[butterfly_name]", color="#4751a7", image="butterfly")
 define butterfly_name = "Lycaenidae"
 
 default last_chosen = None
@@ -35,15 +42,18 @@ default chosen_reverse = False
 default chosen_fix = False
 default chosen_leave = False
 
+define left1 = Position(xpos=0, xanchor="left")
+define left2 = Position(xpos=0.2, xanchor="left")
+define left3 = Position(xpos=0.4, xanchor="left")
+
 label start:
     jump intro
 
 label intro:
     # start scene intro #######################################################################
+    play music "desert-winds.mp3"
     scene bg stairs
-    # TODO: image of protag tripping on stairs
-    p "AHHHHHHHHHH!"
-    # TODO: image of everyone looking irreverent
+    p "AHHHHHHHHHH!" with hpunch
     p "Really?? In front of everyone?? I'll be the laughingstock of the school!!"
     p "Oh, I guess people in college really are irreverent.
         It's not like my ability is invisibility or anything...
@@ -51,30 +61,31 @@ label intro:
     p "But maybe I'd prefer that invisibility were my ability.
         After all, being able to communicate with nature spirits and all that is kind of
         boring if they can't really outshine humans in the first place..."
-    # TODO: image of protag looking up at spirits
     p "Yes, I'm talking to you all."
     p "Although, I guess versatility is a plus, but who cares if the spirits heal the scrape you got from
         tripping on the stairs {b}if they were the ones who grew the roots that tripped you{/b}..."
+    play music "playtime.mp3"
     show beatrice normal
     b "Um, who are you talking to?"
-    # TODO: image of protag starting to walk away
     p "I have no idea what you're talking about."
     b "Wait! Can you talk to the spirits??!! That's sooooo cool!!!"
     b "What are they like?? What do they say?!
         I mean, we see them in drawings, but seeing them in reality is so interesting!
         And it's really rare too!!"
-    # TODO: image of protag talking to beatrice
     $ temp = False
     menu:
         "Open up about the spirits":
+            play sound "mouseclick.wav"
             p "Oh, um, I'm surprised you care that much about them. I mean, it can definitely
                 be useful sometimes, but I usually need to work out deals with them. They're
                 pretty kind, and they're cool to talk to!"
         "Avoid the topic":
+            play sound "mouseclick.wav"
             p "Oh, I don't really like when people talk to me about them. It brings up some
                 challenging stuff from my past."
             $ temp = True
         "Complain about the spirits":
+            play sound "mouseclick.wav"
             p "Oh, thanks, but they can be pretty inconvenient. For example, I recently had to
                 give them a handmade water bottle holder in exchange for them growing a plant
                 instantly. Some people can do that without having to talk to the spirits."
@@ -91,10 +102,8 @@ label intro:
     b "I guess it's only fair that I tell you about my power too! Mine is Memory Viewing.
         If someone permits it, I can look at any memory they have. It's just like a movie!"
     b "It's not super helpful, but it's really cool!"
-    # TODO: image of beatrice walking away
     b "Anyway, I've got to go to class. See you around, new friend!!"
     p "{i}Friend? Guess that works...{/i} See ya!"
-    # TODO: image of protag walking away
     p "Wait, I'm late too! Oh no!"
     # end scene intro #########################################################################
     # start scene outside lecture hall ########################################################
@@ -102,6 +111,7 @@ label intro:
     "[riley_name] runs through campus, ignoring anyone they see on the way."
     p "Whew, made it on time. Just barely though..."
     p "Huh? Why is everyone still outside? Shouldn't everyone be inside already? Are we all late?!"
+    play music "intelligence-network.mp3"
     show fry normal
     f "Well, well, well... I can see from your face that you seem confused.
         I shall illuminate your confusion!"
@@ -114,11 +124,13 @@ label intro:
     p "Oh, um, hello. I'm [riley_name]."
     menu:
         "Ask for help with class":
+            play sound "mouseclick.wav"
             p "I'm glad I met someone who seems like they know what they're doing!
                 The science of magic has always been so confusing to me,
                 but it's required for my major in healing, so it would be great if you could help me!"
             f "Sure! I guess I can do that, as long as you actively try as well."
         "Tease his whole vibe":
+            play sound "mouseclick.wav"
             p "I was honestly expecting you to keep talking like you were a mad scientist...
                 Anyway, I'm glad someone is talking to me."
             f "Oh, that, um, I put that on to deter anyone who might be hostile to my interests.
@@ -177,19 +189,22 @@ label intro:
     s "This course ultimately goes into depth on the interactions of magically produced electricity and normal electricity,
         and how we managed to merge the two."
 
+    play music "desert-winds.mp3"
     scene bg lecture outside
-    show fry normal
+    show fry sad
     p "Wow, my brain hurts..."
     f "..."
     menu:
         "Check on him":
+            play sound "mouseclick.wav"
             $ temp = True
             p "You ok?"
         "Tell him to relax":
+            play sound "mouseclick.wav"
             $ temp = False
             p "You've got to relax a little. I know he's an important person,
                 but you're gonna run out of gas if you take everything too seriously."
-    f "Oh! Yeah, I was just thinking... He was much more than I expected, but now he seems so much more human?"
+    f normal "Oh! Yeah, I was just thinking... He was much more than I expected, but now he seems so much more human?"
     f "I guess... I've always been suspicious of people who seem like that... mortal, fallible.
         He was always above such things to me, but now I'm not so sure."
     f "No, I have to believe he is the legend I hold so close to my heart!"
@@ -215,7 +230,7 @@ label intro:
     p "I guess here would work! Um, excuse me, is it OK to sit here?"
     m "Fine. Whatever."
     p "Thanks! Hmmmm... first we have a side of potato chips, quite the ordinary ones I suppose..."
-    m "Ugh, I'm gonna kill them. I swear I'm going to kill them!"
+    m angry "Ugh, I'm gonna kill them. I swear I'm going to kill them!"
     p "Then, I guess I'll be eating this sandwich next. Hmm, it appears to be turkey and cheddar...
         I guess ketchup on this is tolerable."
     m "How did I get roped into this again? Some stupid scholarship?
@@ -226,8 +241,9 @@ label intro:
         They swear that eventually they will need me for something, but still."
     menu:
         "Talk to the girl":
-            pass
+            play sound "mouseclick.wav"
         "Keep ignoring the girl":
+            play sound "mouseclick.wav"
             p "Oh, an oatmeal raisin cookie... spirits, you can have this one for free, OK?"
             m "I mean, this machine is clearly not doing anything to actually improve the situation outside!"
             m "Meaningless innovation as if the actual problems aren't interesting enough!"
@@ -240,7 +256,7 @@ label intro:
         I'm [riley_name], by the way."
     p "You don't have to tell me everything, but if you want to vent, I can listen."
     $ millie_name = f"{millie_first} {millie_last}"
-    m "Oh, introductions. [millie_name]. OK then, I'll tell you."
+    m normal "Oh, introductions. [millie_name]. OK then, I'll tell you."
     m "It wasn't anything special. In fact, my life was straight-up common...
         for someone whose parents never were sure of their ability to keep me fed, at least."
     m "I survived, but was always aware of the newest technology, never being able to try it."
@@ -270,6 +286,7 @@ label intro:
     m "Oh, here's mine! I've got to get going, but I'll see you soon!"
     p "Talk to you later!"
 
+    play music "intelligence-network.mp3"
     scene bg cafeteria inside
     show mattias normal
     p "{i}Oh? Is that Professor [mattias_last]? Maybe I should ask?{/i}"
@@ -291,14 +308,17 @@ label intro:
     s "I believe it could be helpful for our efforts!"
     menu:
         "Agree to visit the lab":
+            play sound "mouseclick.wav"
             p "Oh, um, I guess that could be cool. Thank you for your help, Professor. I'll see you later!"
         "Push back on the invitation":
+            play sound "mouseclick.wav"
             p "I don't want to be treated like an experiment. I need some time to think about it, Professor."
     p "{i}It feels really odd that he's so eager... Are spirits that interesting?{/i}"
     p "{i}Sure, some of them are cool and mysterious, but most of them are annoying and childish,
         always asking for my hair to make trees and flowers grow...{/i}"
     "[riley_name] walks away."
 
+    play music "playtime.mp3"
     scene bg cafeteria outside
     b "Oh, hi Riley! Didn't think I'd run into you here! What's up?"
     p "Huh, [beatrice_first]?"
@@ -308,8 +328,10 @@ label intro:
     b "Do any super cool feats where you shocked everybody about how super cool you were?"
     menu:
         "Go along with the odd comment":
+            play sound "mouseclick.wav"
             p "Not quite... I did manage to meet quite a few people, but I haven't really done anything yet."
         "Respond with some uncertainty":
+            play sound "mouseclick.wav"
             p "It kind of sounds like you're making fun of me...
                 No, unfortunately I have not shown everyone how \"super cool\" I am."
     b "Oh! I should have known, your hair looks the same way it did before,
@@ -357,12 +379,13 @@ label intro:
     m "[mattias_last], you mean the Professor?"
     m "I hate that man... maybe if he did more but gave vague directions,
         I would actually have something to do in his project I was drafted into..."
+    play music "badlands.mp3"
     f "GASP! You dare slander the visionary of our time?"
-    m "Ha, any day of the week! If you're going to threaten my scholarship, you should at least have me do something!"
+    m angry "Ha, any day of the week! If you're going to threaten my scholarship, you should at least have me do something!"
     m "If he would just let me, I could find a different position in an art lab or something."
     m "But no, for some reason, he can't seem to stand the idea of not having access to a resource he's claimed,
         regardless of whether that resource is a human!"
-    f "If anything, you should be honored to be working with him. And besides, he isn't very powerful by himself,
+    f angry "If anything, you should be honored to be working with him. And besides, he isn't very powerful by himself,
         so you can barely blame him for having to utilize others!"
     f "If he is condemned for that, then I don't have a chance of achieving anything useful in my career."
     f "Unlike magic, technology is impartial, and anyone can use it!
@@ -377,7 +400,7 @@ label intro:
     b "Um, maybe you could lay off each other a little bit...
         It seems to me your opinions are based on your personal experience."
     b "Which is completely understandable, but indicates that you may not reach a middle ground very soon."
-    m "Yeah, sure whatever..."
+    m normal "Yeah, sure whatever..."
     f "Hold up, you still haven't apologized for slandering Professor [mattias_last]. This injustice must be remedied!"
     b "Isn't it OK for people to have their opinions about other people... everyone's perspective is different, right?"
     f "I wouldn't expect a normie to understand!"
@@ -386,7 +409,8 @@ label intro:
     p "Sigh... Hey [fry_first], I know you put this act on to protect yourself, but these are cool people.
         You don't have to drive them away."
     p "You've been antagonizing them to no end... Please, let it go for now."
-    f "Oh, um, I see. I guess I'm sorry, [millie_first]."
+    play music "desert-winds.mp3"
+    f normal "Oh, um, I see. I guess I'm sorry, [millie_first]."
     f "I still wish you could see how cool Professor [mattias_last] is, but I definitely was a bit out of line there."
     m "A bit? You literally caused [beatrice_first] to run away! Although, I guess I was a little combative as well...
         That doesn't mean I like you, but I won't disregard you entirely yet..."
@@ -399,8 +423,9 @@ label intro:
     hide millie
     f "{i}Probably will be OK if I follow them, right? I want to see the lab!{/i}"
 
+    play music "through-the-arches.mp3"
     scene bg lab entrance
-    show millie normal
+    show millie normal at right
     m "Well, here we are. Welcome to the edge of despair. Sigh, I was really hoping not to be here today."
     p "Wow, this is like a sci-fi movie!"
     m "Ha, more like a supervillain's lab. Come here, I'll show you to the main event."
@@ -409,10 +434,12 @@ label intro:
     m "It's just the white-coated narcissist."
     menu:
         "Agree that Mattias is the problem":
+            play sound "mouseclick.wav"
             p "Got it, and to be honest, I didn't really care for him either."
             p "When I was talking to him, it seemed like he just wanted to see whether I would be useful or not."
             m "Right? I'm glad you agree."
         "Defend the lab's mission":
+            play sound "mouseclick.wav"
             p "If the rest of the staff are lovely, I wonder how bad he really is...
                 Isn't he working on technology that's going to improve humanity forever?"
             m "Yes, I guess you could look at it that way..."
@@ -420,7 +447,7 @@ label intro:
     m "I assure you, if there is one thing you have to see here, it's that beautiful monstrosity."
 
     scene bg lab room
-    show millie normal
+    show millie normal at right
     p "Whoa... you were right, I've never seen anything like this..."
     p "What does it do?"
     m "Well, that's the thing, we don't really know... he tells us some functions,
@@ -434,20 +461,22 @@ label intro:
         So I guess [fry_first] was right about one thing..."
     m "He does seem to be a visionary, even if those visions seem more like a manifestation of whatever anime he's watched
         rather than a bright future."
-    show fry normal at right
+    show fry normal at left
     f "OH WOW WOW WOW, this place is so cool!"
+    play music "badlands.mp3"
     m "Oh no."
     f "I'm sorry I can't help myself... Is that what he's been working on?
         That's so cool, maybe it's a revolutionary form of computer that will advance us 50 years!"
-    m "Why. Are. You. Here?"
+    m angry "Why. Are. You. Here?"
     f "I just had to see! Is that a problem?"
     m "..."
     m "YES [fry_first], of course it's a major problem.
         The only reason I let Riley in was that they were recruited by the professor!"
     f "Oh, um, I didn't realize it would be a big deal. What now?"
-    m "Sigh... Riley, you can leave. I'll figure something out."
+    m normal "Sigh... Riley, you can leave. I'll figure something out."
     p "Oh, OK. Bye, I guess."
 
+    play music "desert-winds.mp3"
     scene bg lab outside
     p "Sigh."
     p "Finally, time to go home. Today has been a ride."
@@ -469,30 +498,33 @@ label intro:
     scene bg stairs
     p "Almost out, I hope I can keep getting closer with everyone tomorrow. It seems like I'm on my way to a college friend group."
     p "I also wonder what will be for lunch tomorrow."
-    "BOOM!"
-    # TODO: There is a flash
-    scene bg ruins
+    "BOOM!" with hpunch
+    $ flash = Fade(.25, 0, .75, color="#fff")
+    play music "second-sky.mp3"
+    scene bg ruins with flash
+    show riley sad
     p "{i}Ow? What the heck is that... Oh my!{/i}"
-    # TODO: drawn art of riley looking at the ruined world
     p "{i}Why? How can it all be gone? Is this real??{/i}"
     p "{i}Ah! My head! It feels like it's splitting open... with power.{/i}"
     p "Everything... Everything is destroyed. How can humanity survive this?"
-    show butterfly normal
+    show butterfly normal at left
     p "A butterfly? A Spirit?"
     p "Why? Why are you the only one I can hear?"
+    hide butterfly
+    show riley butterfly
     p "..."
     p "Wha-What are you doing?"
-    # TODO: drawing where butterfly is on a very scared riley's head
-    # TODO: butterfly effect/sound plays
 
     jump branch_point
 
 label branch_point:
-    centered "Earlier that day"
-    scene bg cafeteria outside
+    play sound "fantasy-magic-spell.mp3"
+    play music "desert-winds.mp3"
+    scene bg cafeteria outside with flash
     show fry normal at left
     show millie normal at right
     show beatrice normal
+    centered "Earlier that day"
     f "However, I, [fry_first], must ensure that these unknown agents are not devious Ne'er-do-wells,
         hoping to steal our confidential secrets!"
 
@@ -525,7 +557,7 @@ label branch_point:
     f "Ha, an elementary mistake!"
     f "While the strategy to deal with those who might insult us is to act dramatically and all that, it does have to be based in reality."
     p "Oh, right, um, everyone, this is [fry_first]."
-    f "Try not to antagonize them, these are good people."
+    p "Try not to antagonize them, these are good people."
     f "Oh... Is that so? Guess I can tone it down then..."
     m "I recognize you. You're that guy who's been following [mattias_first] around like a shadow, right?"
     m "I can't understand what you can see in the guy."
@@ -542,7 +574,7 @@ label branch_point:
             "Convince [fry_first] to help" if chosen_fry:
                 jump initial_fix
             "I still need to investigate more first":
-                pass
+                play sound "mouseclick.wav"
     p "Actually, I'm quite interested in this lab. There's a cool machine in there, right?"
     m "Yeah, I guess so, if you could call anything that man contributes \"cool\"..."
     p "I wonder, I think I might try and take a look..."
@@ -557,9 +589,10 @@ label branch_point:
             jump fry_day
 
 label millie_day:
+    play sound "mouseclick.wav"
     $ last_chosen = millie_first
     $ chosen_millie = True
-    centered "INTENT"
+    centered "Intent"
     p "[millie_first], you'd be able to take me, right?"
     m "I could take you... but I would caution you about doing anything related to that man."
     p "No, I think I need to do this. I need to get all the info I can, right?"
@@ -572,6 +605,7 @@ label millie_day:
     m "Oh, OK... if you're looking for dirt, maybe we can look in his office – the professor's, I mean."
     p "That sounds like a great place to start!"
 
+    play music "through-the-arches.mp3"
     scene bg office
     show millie normal
     m "So, what exactly are we looking for?"
@@ -594,6 +628,7 @@ label millie_day:
     p "Yeah, it seems like that would be cathartic for you! Do you want to talk about the specific work you do?
         So I can get a better idea before I consider things further."
     m "Oh, yeah, that would probably be f—"
+    play music "badlands.mp3"
     show mattias normal at right
     s "Ah, what do we have here? How convenient that you chose to come now!"
     m "Oh. It's you. Hello Professor."
@@ -602,8 +637,10 @@ label millie_day:
     s "And no, you won't be leaving until then. We are just too close to greatness, and you are the key."
     menu:
         "Deny his authority":
+            play sound "mouseclick.wav"
             p "Um, I really would rather leave."
         "Play it cool while you try and slip out":
+            play sound "mouseclick.wav"
             p "Hahaha, I didn't know you were funny, Professor. But unfortunately, I should probably be goingggg."
     s "Well, you really don't get a choice. I am sorry, but I will be able to ensure you are treated well."
     p "That I'm treated well? What is going on? I have my phone, we can call someone to come get us."
@@ -618,26 +655,26 @@ label millie_day:
         Isn't that the world you want?"
     m "Well, in a way. Even if that isn't the worst thing that could happen in theory,
         I want to improve this world! You can't just use a machine to make everything perfect. This is insanely dystopian."
-    s "Well, if you think that you can just overthrow me! You'll probably be strong enough for it!
+    s angry "Well, if you think that you can just overthrow me! You'll probably be strong enough for it!
         Surely you don't mean that you can't see the upsides?"
     s "I know that I'm tired of technology at the very least!"
-    show fry normal at left
+    show fry sad at left
     f "Professor [mattias_last]? What... What are you talking about?"
-    s "Oh, it's you. Aren't you excited! Even your lame power will be boosted!"
+    s normal "Oh, it's you. Aren't you excited! Even your lame power will be boosted!"
     f "But technology, isn't that what equalizes us who don't have grand powers... Why..."
-    s "I have my reasons, or are you doubting me? The student who adores me most also doubts my greatest idea.
+    s angry "I have my reasons, or are you doubting me? The student who adores me most also doubts my greatest idea.
         Just one click of that button and the systemic oppression will be flipped on its head, and you want to stop me?"
-    f "No—I mean, I would never... and I'll prove it!"
-    s "Wait—no it's not ready yet!"
+    f normal "No—I mean, I would never... and I'll prove it!"
+    s normal "Wait—no it's not ready yet!"
+    play sound "sci-fi-vehicle.wav"
     "[fry_first] presses the button."
     $ last_triggerer = fry_first
     p "That can't be good. [millie_first], we have to get out of here!"
     m "Let's hurry!"
 
-    scene bg stairs
-    show millie normal
+    play music "second-sky.mp3"
     scene bg ruins
-    show millie normal
+    show millie sad
     m "What... just happened?"
     p "It seems the machine wasn't functioning properly, and did... this."
     m "Oh my! Look at what they've done! Is this real? Is everything just... gone?
@@ -655,12 +692,13 @@ label millie_day:
     m "Maybe if I stopped relying on this power,
         I could have made more of a difference... but now it's too late."
     p "No, maybe this time, but next time, I will do better, I have to—"
-    m "Next time?"
     show butterfly normal at left
+    m normal "Next time?"
 
     jump branch_point
 
 label beatrice_day:
+    play sound "mouseclick.wav"
     $ last_chosen = beatrice_first
     $ chosen_beatrice = True
     p "[beatrice_first], could you come with me?
@@ -679,10 +717,10 @@ label beatrice_day:
     p "Yes."
     b "OK then, let's do it."
 
-    scene bg ruins
-    scene bg lecture outside
+    scene bg ruins with flash
+    b "What? How—How could you have these memories?"
+    scene bg lecture outside with flash
     show beatrice normal
-    b "What? How-How could you have these memories?"
     p "I don't know, there was a butterfly, I don't know what exactly happened,
         but it seemed like it originated from Professor [mattias_last]'s lab."
     b "I see, you were right, I knew you would be,
@@ -692,6 +730,7 @@ label beatrice_day:
         would be so in the dark to want to destroy this beautiful planet."
     p "Right! It has to be a mistake, we just need to figure out why."
 
+    play music "through-the-arches.mp3"
     scene bg office
     show beatrice normal
     b "Hmm, if I were a top-secret file that would help save the world, where would I be?"
@@ -733,7 +772,7 @@ label beatrice_day:
     p "Oh I, I mean, me? All of it, because of me..."
     "[riley_name] sobs."
     b "Hey, [riley_first], [riley_first], it's OK, you didn't know."
-    p "But-but you've seen what I have, all that was because of me."
+    p "But—but you've seen what I have, all that was because of me."
     p "How am I supposed to deal with that?"
     b "It may sound simple but you can never go back to not knowing anymore."
     b "And besides, what's most important is that you know now."
@@ -748,13 +787,14 @@ label beatrice_day:
     b "Now, we just have to figure out how to disable the machine,
         it's probably past the point it will ever be safe already."
     p "You're right! Let's figure this out!"
-    m "YOU HAVE GOT TO BE FREAKING KIDDING ME!"
+    m "YOU HAVE GOT TO BE FREAKING KIDDING ME!" with hpunch
     p "But first we should probably check to see what that is about."
 
+    play music "badlands.mp3"
     scene bg lab room
-    show millie normal at right
+    show millie angry at left2
     show fry normal at left
-    show beatrice normal
+    show beatrice normal at right
     p "[millie_first]? What's going on? Why is [fry_first] here?"
     m "What's going on? I'll tell you what's going on!"
     m "This idiot just cost me my job!"
@@ -771,7 +811,7 @@ label beatrice_day:
     m "{i}Also{/i}, since I didn't have time to look for a job beforehand,
         if I don't find somewhere else to help out,
         then I effectively won't be able to go to this school anymore."
-    f "You worry for nothing,
+    f angry "You worry for nothing,
         working for Professor [mattias_last] will surely be a great benefit to your future work pursuits."
     m "He refused to write me a recommendation. I already asked, and he said NO!"
     m "He said that he's \"Too Busy.\" As if he's doing ANYTHING.
@@ -784,13 +824,14 @@ label beatrice_day:
         and I'll be recorded as the one who did it!"
     b "No! You don't understand, we'll figure something out. We promise.
         But you can't activate that machine!"
-    # TODO: Sound/light effect to indicate it's been turned on
-    "[millie_first] turns on the machine."
+    play sound "sci-fi-vehicle.wav"
+    "[millie_first] turns on the machine." with flash
     $ last_triggerer = millie_first
     b "Oh no! I was too late. [riley_first], let's go."
     p "Oh. OK then... Why is this happening?"
     b "You can overthink later, for now we've got to get out of here!"
 
+    play music "second-sky.mp3"
     scene bg ruins
     show beatrice normal
     b "It really happened."
@@ -832,8 +873,7 @@ label beatrice_day:
     b "Besides, now you know, things won't be as bad if you stay away from the lab, the machine won't function at all.
         You know at least one way to save this world, and it's as simple as doing nothing at all."
     show butterfly normal at left
-    # TODO: scene is of Riley Standing back to back with beatrice, looking at the sky, with butterfly in frame
-    # TODO: Butterfly effect sounds/images
+    show beatrice cg 1
     p "I see, you're right, it is time, I truly hope that I can talk to you again,
         that you do come with, even if you don't remember."
     b "Believe me, I do too."
@@ -841,11 +881,12 @@ label beatrice_day:
     jump branch_point
 
 label fry_day:
+    play sound "mouseclick.wav"
     $ last_chosen = fry_first
     $ chosen_fry = True
     p "{i}Of course! If it is because of the machine, like I suspect,
         then surely [fry_first] can help! He knows machines.{/i}"
-    centered "mechanism"
+    centered "Mechanism"
     p "[fry_first], would you come with me? I need to look into something..."
     f "Oh, um, sure! I'm sure I can help answer technical questions."
     m "Hey! I could answer those too!"
@@ -856,8 +897,9 @@ label fry_day:
     f "Yep! I can't wait!"
     p "Then let's go!"
 
+    play music "through-the-arches.mp3"
     scene bg lab room
-    show fry normal
+    show fry normal at left
     p "Look, here is the machine the professor has been working on..."
     p "Is there any chance you can tell what it does? I'm a bit curious."
     f "Um, yeah, I can see if I can figure it out..."
@@ -885,7 +927,7 @@ label fry_day:
     hide fry
     p "I wonder where that will lead... Hopefully he'll be able to figure that out."
     p "Because I very much know what will happen if this is not solved."
-    show beatrice normal
+    show beatrice sad at left
     b "I finally found you!"
     b "Something's happened to [millie_first]! She fell down the stairs! Her leg is broken!"
     p "What, [millie_first]? How could this happen!"
@@ -894,10 +936,10 @@ label fry_day:
     p "Sorry, but could you wait just a moment? This machine – I have to help [fry_first] fix it, then I can go help [millie_first]."
     b "This machine? It can't be that urgent... We can leave [fry_first] a note, if you explain, I'm sure he'll understand!"
     b "And besides, even if it's about to explode or something, it has an off switch! See I can even switch it for you."
-    # TODO: Machine activation effect/noise
+    play sound "sci-fi-vehicle.wav"
     $ last_triggerer = beatrice_first
-    p "Oh no... Beatrice, that was the \"On\" switch..."
-    show fry normal at left
+    p "Oh no... Beatrice, that was the \"On\" switch..." with flash
+    show fry normal at right
     f "Oh, hi... My fellow human! Um, are you doing OK... Because I can assist you if you require it of this genius scientist!"
     f "Oh whatever..."
     p "[fry_first], we have to go! Everyone runs!"
@@ -906,6 +948,7 @@ label fry_day:
         I will allow you to assist me in making my glorious escape!"
     p "Here, [fry_first], you can follow me, I can help you, [beatrice_first], you get out of here on your own."
 
+    play music "second-sky.mp3"
     scene bg ruins
     show fry normal
     p "I see, it happened again."
@@ -942,14 +985,15 @@ label fry_day:
         but it might have started a process that leads to the solution."
     f "Make sure something changes, and out of that change maybe we could have
         figured out how to fix these ways of thinking we seem to be so stuck at."
-    p "I understand [fry_first]..."
-    # TODO: drawn scene Butterfly appears again, Riley looks at it, Fry looks down.
+    show fry cg 1
+    show butterfly normal
+    p "I understand, [fry_first]..."
     p "I see, so I'll be able to try again. Maybe with [fry_first]'s help, I could figure something else out."
-    # TODO: Butterfly effect sounds/images
 
     jump branch_point
 
 label initial_reverse:
+    play sound "mouseclick.wav"
     $ chosen_reverse = True
     p "And anyway, now that I think about it, I have a question for Millie as well. Could you come with me for a moment?"
     hide fry
@@ -991,16 +1035,17 @@ label initial_reverse:
         Wouldn't want to let that stupid genius make himself a monarch while we deliberate."
     p "I don't think that's super likely, but we can certainly try."
 
+    play music "through-the-arches.mp3"
     scene bg lab room
-    show millie normal
+    show millie normal at right
     p "Are you ready?"
     m "As I'll ever be... let's condemn this world to being one of technology, where the rich undeniably rule."
     p "To save it from a fate where no one can live."
     m "Yes, of course."
-    # TODO: Machine activate, and makes the visual and sound effects, but there is another new sound effect as well, to indicate reversal
-
-    scene bg lab room machineless
-    show millie normal
+    play sound "sci-fi-vehicle.wav"
+    play music "no-turning-back.mp3"
+    scene bg lab room machineless with flash
+    show millie normal at right
     m "Is it done?"
     p "I think so."
     m "Well then, best we figure out what to do in a world with only boring technology,
@@ -1030,6 +1075,7 @@ label initial_reverse:
     jump initial_ending
 
 label initial_leave:
+    play sound "mouseclick.wav"
     $ chosen_leave = True
     p "Or, you two can keep discussing if you really want to,
         [beatrice_first], could you come with me for a moment, I have a favor to ask."
@@ -1050,9 +1096,10 @@ label initial_leave:
     b "Oh, and if he gets mad... send him to me, I'll take responsibility."
     p "OK! Good to know."
 
-    scene bg lecture outside
+    play music "badlands.mp3"
+    scene bg lecture outside with flash
     show beatrice normal
-    show mattias normal at left
+    show mattias angry at left
     b "[riley_first] I did it! You should have seen the look on Fry and Millie's faces!
         It was hilarious! What was your plan now? [mattias_first] seemed very angry..."
     s "Angry... I see an apt description. You were the one who put her up to this, right [riley_first]?
@@ -1064,6 +1111,7 @@ label initial_leave:
     s "I can tell you were expecting to be punished, and OK with it,
         so naturally to actually inconvenience you I have to do so to your friend as well."
     s "Maybe then you'll feel remorse. So long then, I will tell the principal myself."
+    play music "no-turning-back.mp3"
     hide mattias
     p "[beatrice_first]... I don't know, I'm sorry..."
     b "It's not your fault, it's [mattias_first], what machine could possibly be worth this much anger?
@@ -1085,6 +1133,7 @@ label initial_leave:
     jump initial_ending
 
 label initial_fix:
+    play sound "mouseclick.wav"
     $ chosen_fix = True
     p "Anyway, I actually had a question about today's homework,
         and [fry_first] had agreed to help me earlier, so I guess I'll have to say goodbye.
@@ -1110,8 +1159,9 @@ label initial_fix:
         but the alternative is the end of the world, so I agree it's worth it."
     f "Yeah. Let's go then, no point waiting."
 
+    play music "through-the-arches.mp3"
     scene bg lab room
-    show fry normal
+    show fry normal at right
     f "OK, I think the machine is fixed now."
     p "Oh, is it?"
     p "I guess it must be about time to activate it then."
@@ -1121,9 +1171,10 @@ label initial_fix:
         As soon as we've settled down after the machine does whatever it does,
         I'll definitely need some time to think and accept that... but now it's time to activate this machine."
     p "Let's go!"
-    # TODO: image and sound for machine activating
+    play sound "sci-fi-vehicle.wav"
 
-    scene bg forest
+    play music "no-turning-back.mp3"
+    scene bg forest with flash
     show fry normal
     p "Oh, I see so this is the world we'll live in now."
     f "Wow. It seems to have changed everything... There's no more technology... What could I possibly do now?"
@@ -1173,20 +1224,25 @@ label initial_ending:
         "Yes":
             jump branch_point
         "No":
+            play sound "mouseclick.wav"
             $ renpy.run(MainMenu())
             jump initial_ending
 
 label final_reset:
+    play music "tamarin.mp3"
+    scene bg cafeteria outside
+    show riley cry at right
+    show fry normal at left1
+    show beatrice normal at left2
+    show millie normal at left3
     p "WHY! Why, can things never end happily...
         I can't just accept that I need to make the sacrifice of leaving someone unhappy, just for the rest to be OK..."
     p "What should I do?"
-    # TODO: Drawing of Riley Breaking down
     b "[riley_first]? What's wrong, what are you talking about?"
     m "Whatever it is, if I can help, I will. You've given me hope of a friend for the first time since I can remember..."
     f "I finally found someone I could trust to see me beyond just my power,
         who saw that I had value and wasn't to be pitied... Please, tell us what's wrong, I'm sure we can help."
 
-    scene bg cafeteria outside
     show butterfly normal
     l "Don't despair, for it will be OK."
     l "I have finally gathered enough power, and [riley_first] has as well."
@@ -1205,7 +1261,11 @@ label final_reset:
     l "Furthermore, it seems some part of each of you already remember."
     l "I am Lycaenidae, and by the small gust those memories leave in your souls, I shall awaken the rest,
         and the hurricane will be yours once more."
-    # TODO: EFFECTS AND SOUNDS THAT SHOULD ACCOMPANY THIS.
+
+    scene bg cafeteria outside with flash
+    show fry normal at left
+    show beatrice normal
+    show millie normal at right
     b "I actually remember! [riley_first]! I made it!"
     b "This is super weird though, like my memories are out of sync, but it does seem like they are unifying well enough,
         I do remember that happening vaguely before this though..."
@@ -1224,7 +1284,10 @@ label final_reset:
         they couldn't stand leaving any of us in a bad situation."
     b "They couldn't stand that anyone had to sacrifice anything."
     b "Oh [riley_first]... It's OK, we're with you now, we can figure this out... It will be OK."
-    # TODO: A picture of a group hug, Riley at the center
+    hide fry
+    hide beatrice
+    hide millie
+    show riley hug
     p "Everyone, thank you."
     p "With all of us together, maybe we have a chance."
     m "What have we learned anyway?"
@@ -1250,9 +1313,6 @@ label final_reset:
     m "Whatever, I'll give that one to you."
 
     scene bg office
-    $ left1 = Position(xpos=0, xanchor="left")
-    $ left2 = Position(xpos=0.2, xanchor="left")
-    $ left3 = Position(xpos=0.4, xanchor="left")
     show beatrice normal at left1
     show millie normal at left2
     show fry normal at left3
@@ -1385,6 +1445,8 @@ label final_reset:
             jump final_fix
 
 label final_leave:
+    play sound "mouseclick.wav"
+    play music "piano-music-inspire.mp3"
     p "Well, I think the correct answer is to just keep it off..."
     p "This world, is not so hopeless as to justify changing all of it."
     p "OK?"
@@ -1474,6 +1536,8 @@ label final_leave:
     jump end
 
 label final_reverse:
+    play sound "mouseclick.wav"
+    play music "piano-music-inspire.mp3"
     p "As cool as magic is, maybe the world would be better off being mostly without it...
         after all, if [mattias_first] can make a world ending machine by accident, then others could theoretically do the same."
     p "I would prefer to largely erase magic from the world if it meant that it would continue!"
@@ -1499,7 +1563,7 @@ label final_reverse:
     p "Yeah, that should be fine, sounds like we're on the same page then!"
     m "Then let's do it! I'll reverse, [riley_first] you focus on the spirit stuff."
     p "Right."
-    # TODO: Machine activation visual effects and sounds
+    with flash
     p "It's done!"
     b "Oh wow! The spirits are so cool! Some of them are really cute too!"
     p "Yeah. They do seem happy to see you."
@@ -1535,6 +1599,8 @@ label final_reverse:
     jump end
 
 label final_fix:
+    play sound "mouseclick.wav"
+    play music "piano-music-inspire.mp3"
     p "Now that we have [mattias_first] cornered, there are a lot fewer negatives to the fantasy angle..."
     p "And in addition to that, this is probably the only way to completely reset power in this world."
     p "Assuming that we can avoid monarchies, we'll be able to construct a new system, one that is fair to everyone,
@@ -1558,8 +1624,8 @@ label final_fix:
     b "Let's protect people!"
     f "Let's get this started then."
 
-    # TODO: Fade to black, and the machine starting sound and visual effects
-    scene bg forest
+    play sound "sci-fi-vehicle.mp3"
+    scene bg forest with flash
     show beatrice normal at left1
     show millie normal at left2
     show fry normal at left3
@@ -1597,14 +1663,17 @@ label final_fix:
     jump end
 
 label end:
-    scene bg stairs
     show butterfly normal
     l "It seems you have found a future you're satisfied with, I'm happy for you."
     menu:
         l "But if any doubt remains, this path is not yet set in stone. Feel free to use my power once more, just remember to return here
             if you decide this is the path your heart desires. However, the other memories won't come with this time."
         "Let's see what the other futures look like":
+            hide butterfly
+            play sound "fantasy-magic-spell.mp3"
             jump final_reset
         "My heart is content":
+            play sound "mouseclick.wav"
             $ renpy.run(MainMenu())
+            hide butterfly
             jump end
